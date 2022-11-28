@@ -1,0 +1,63 @@
+.inner_container .intro_cont {
+  margin-top: 100px;
+}
+.intro_cont .list_img img {
+  width: 100%;
+}
+.intro_table {
+  width: 100%;
+  margin-top: 75px;
+  border-collapse: collapse;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+}
+.intro_table tr {
+  letter-spacing: -1px;
+  border-bottom: 1px solid #000;
+}
+.intro_table tr td {
+  padding: 30px 0 30px 30px;
+}
+.intro_table .table_title {
+  background: #f7f7f7;
+}
+
+.intro_btn_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  gap: 20px;
+}
+.intro_btn_list .intro_btn {
+  max-width: calc(50% - 20px);
+  width: 100%;
+  padding: 90px 50px 30px 50px;
+  background: #f7f7f7;
+}
+.intro_btn_list .intro_btn button {
+  width: 100%;
+  text-align: left;
+  border: none;
+  background: none;
+}
+.intro_btn_list .btn_text {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.intro_btn .btn_title {
+  font-size: 36px;
+  font-weight: 700;
+}
+.intro_btn .btn_desc {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.intro_btn .more_box {
+  text-align: right;
+}
+.intro_btn .more_btn {
+  margin-top: 55px;
+  border-bottom: none;
+}
+.intro_btn .more_btn i {
+  transform: translateY(-50%);
+}

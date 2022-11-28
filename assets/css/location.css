@@ -1,0 +1,21 @@
+.location .locate_cont {
+  margin-top: 100px;
+  border-radius: 30px;
+}
+.location .locate_cont .locate_map {
+  width: 100%;
+}
+.location .locate_cont .locate_map iframe {
+  width: 100%;
+}
+.locate_cont .locate_address {
+  margin-top: 50px;
+  padding-left: 30px;
+}
+.locate_cont .locate_address .address_title {
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+.locate_cont .locate_address p {
+  margin-bottom: 10px;
+}
