@@ -1,0 +1,25 @@
+.pro_main{
+  position: relative;
+}
+
+.pro_text_box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.pro_main_txt{
+  margin-top: 20px;
+}
+
+.pro_intro{
+  padding: 100px 0;
+  text-align: center;
+}
+
+.pro_intro .ain_title span{
+  font-weight: bold;
+}
