@@ -41,6 +41,7 @@ a {
 
 .main_title {
   font-size: 55px;
+  /* 폰트사이즈 변경 가능성 있음 */
 }
 
 .section_title {
