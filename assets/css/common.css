@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -6,12 +6,14 @@
   box-sizing: border-box;
 }
 
-html, body {
-  font-family: 'Noto Sans', sans-serif;
+html,
+body {
+  font-family: "Noto Sans", sans-serif;
   font-size: 20px;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -48,4 +50,35 @@ a {
 
 .sub_title {
   font-size: 42px;
+}
+.title_desc {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* read more 버튼 */
+
+.more_btn {
+  padding-right: 24px;
+  line-height: 35px;
+  color: #000;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  position: relative;
+}
+
+.more_btn i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-2px);
+  right: 5px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background: url("../images/arrow.png") no-repeat;
+  width: 12px;
+  height: 12px;
+}
+
+.more_btn:hover i {
+  right: 0px;
 }
