@@ -16,10 +16,10 @@
 .introduction .section_title .t_light {
   font-weight: 300;
 }
-.introduction .inner_container .intro_list {
+.introduction .inner_container .intro_cont {
   margin-top: 100px;
 }
-.introduction .intro_list .list_img img {
+.introduction .intro_cont .list_img img {
   width: 100%;
 }
 .introduction .intro_table {
@@ -40,18 +40,39 @@
   background: #f7f7f7;
 }
 
-.introduction .intro_btn_list {
+.introduction .intro_btn_cont {
   display: flex;
   flex-wrap: wrap;
   margin-top: 60px;
   gap: 20px;
 }
-.introduction .intro_btn_list .intro_btn {
+.introduction .intro_btn_cont .intro_btn {
   max-width: calc(50% - 20px);
   width: 100%;
+  padding: 90px 50px 30px 50px;
+  background: #f7f7f7;
 }
-.introduction .intro_btn_list .intro_btn button {
+.introduction .intro_btn_cont .intro_btn button {
+  width: 100%;
   text-align: left;
   border: none;
   background: none;
+}
+.introduction .intro_btn_cont .btn_text {
+  font-family: "Noto Sans KR", sans-serif;
+}
+.introduction .intro_btn .btn_title {
+  font-size: 36px;
+  font-weight: 700;
+}
+.introduction .intro_btn .btn_desc {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.introduction .intro_btn .more_box {
+  text-align: right;
+}
+.introduction .intro_btn .more_btn {
+  margin-top: 55px;
+  border-bottom: none;
 }
