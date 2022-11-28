@@ -16,3 +16,24 @@
 .section_title .t_light {
   font-weight: 300;
 }
+
+.manage_cont {
+  margin: 80px 0 100px;
+}
+.manage_list {
+  display: flex;
+  gap: 90px;
+  justify-content: center;
+}
+.manage_list li {
+  max-width: 405px;
+}
+.manage_list li img {
+  width: 100%;
+}
+.manage_list .desc {
+  width: 95%;
+  margin-top: 50px;
+  text-align: center;
+  word-break: keep-all;
+}

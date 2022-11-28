@@ -83,7 +83,9 @@ a {
 .section_title .t_light {
   font-weight: 300;
 }
-
+.inner_container .cont {
+  margin: 100px auto;
+}
 /* read more 버튼 */
 
 .more_btn {
