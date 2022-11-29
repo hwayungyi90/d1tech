@@ -1,11 +1,8 @@
-.main_visual {
-  width: 100%;
-  height: 550px;
+.sub_visual {
   background: url(../../assets/images/introduction_main.png) no-repeat center;
   background-size: cover;
 }
-.main_visual .main_text {
-  padding: 210px 0;
+.sub_visual .main_text {
   text-align: center;
   color: #fff;
 }
@@ -39,4 +36,29 @@
 }
 .locate_cont .locate_address p {
   margin-bottom: 10px;
+}
+@media screen and (max-width: 1024px) {
+  .inner_container .cont {
+    margin: 80px auto;
+  }
+  .locate_cont .locate_address {
+    margin-top: 30px;
+  }
+  .locate_cont .locate_address .address_title {
+    margin-bottom: 12px;
+    font-size: 26px;
+  }
+  .locate_cont .locate_address p {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .inner_container .cont {
+    margin: 60px auto;
+  }
+  .locate_cont .locate_address {
+    padding-left: 10px;
+    margin-top: 20px;
+  }
 }
