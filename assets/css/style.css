@@ -140,6 +140,8 @@
 
 .main_section .main_visual_img img {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .main_section .main_text_box {
@@ -165,7 +167,7 @@
 
 .business_section .business_img_flex {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
 }
 
 .business_section .business_img_flex .box_wrap .img_box {
@@ -186,7 +188,7 @@
   padding-right: 24px;
   line-height: 35px;
   color: #000;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
   display: inline-block;
   position: relative;
 }
@@ -222,7 +224,19 @@
 .project_section .project_flex {
   display: flex;
   justify-content: space-between;
-  gap: 125px;
+  align-items: center;
+}
+
+.project_section .project_flex .project_left {
+  width: 100%;
+}
+
+.project_section .project_flex .project_right {
+  width: 100%;
+}
+
+.project_section .project_flex .project_right .project_img_box img {
+  width: 100%;
 }
 
 .project_section .swiper-button-next:after,
@@ -262,13 +276,11 @@
   justify-content: center;
 }
 
-.project_section .project_flex .project_left .sub_title {
-  margin-top: 160px;
-  margin-bottom: 50px;
+.project_section .project_flex .project_left .pro_title {
   font-weight: 700;
 }
 
-.project_section .project_flex .project_left .sub_title + P {
+.project_section .project_flex .project_left .pro_title + P {
   line-height: 30px;
 }
 
@@ -280,6 +292,10 @@
   border: 1px solid #000;
   border-radius: 100px;
 }
+
+.project_section .swiper-pagination {
+    display: none;
+  }
 
 /* benefit section */
 .benefit_section {
@@ -293,15 +309,16 @@
 
 .benefit_section .benefit_flex {
   display: flex;
-  padding: 0 142px;
+  padding: 0 140px;
   gap: 20px;
+  justify-content: space-between;
 }
 
 .benefit_section .benefit_flex .benefit_box {
-  padding: 80px 0 40px 30px;
+  padding: 80px 30px 40px 30px;
   border: 1px solid #cccccc;
-  width: 263px;
-  height: 263px;
+  /* width: 263px; */
+  /* height: 263px; */
   transition: all 0.3s;
 }
 
@@ -381,6 +398,10 @@
 
   #menu_gnb {
     display: none;
+  }
+
+  .header .header_wrap .header_flex {
+    padding: unset;
   }
 
   .header .header_layer {
@@ -493,21 +514,10 @@
       color: rgba(0, 0, 0, .5);
   }
 
-
-
   /* main_section */
-  .main_section {
-    position: relative;
-  }
-
-  .main_section .main_visual_img img {
-    width: 100%;
-  }
-
   .main_section .main_text_box {
-    position: absolute;
-    top: 116px;
-    left: 190px;
+    top: 80px;
+    left: 32px;
     max-width: 590px;
   }
 
@@ -517,74 +527,46 @@
 
   /* business section */
   .business_section {
-    padding: 120px 0 160px;
-    text-align: center;
+    padding: 100px 0 70px; 
   }
 
   .business_section .title_position {
-    margin-bottom: 90px;
+    margin-bottom: 70px;
   }
 
   .business_section .business_img_flex {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 
+  .business_section .business_img_flex .box_wrap {
+    width: calc(50% - 15px);
+  }
+
   .business_section .business_img_flex .box_wrap .img_box {
-    margin-bottom: 30px;
-  }
-
-  .business_section .business_img_flex .box_wrap .img_box img {
-    width: 100%;
-  }
-
-  .business_section .business_img_flex .box_wrap .txt_box .sub_title {
-    font-family: "Play", sans-serif;
-    font-weight: 700;
     margin-bottom: 25px;
   }
 
+  .business_section .business_img_flex .box_wrap .txt_box .sub_title {
+    margin-bottom: 10px;
+  }
+
   .business_section .business_img_flex .box_wrap .txt_box .more_btn {
-    padding-right: 24px;
-    line-height: 35px;
-    color: #000;
-    border-bottom: 2px solid #000;
-    display: inline-block;
-    position: relative;
-  }
-
-  .business_section .business_img_flex .box_wrap .txt_box .more_btn i {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-2px);
-    right: 5px;
-    -webkit-transition: all 0.4s;
-    transition: all 0.4s;
-    background: url("../images/arrow.png") no-repeat;
-    width: 12px;
-    height: 12px;
-  }
-
-  .business_section .business_img_flex .box_wrap .txt_box .more_btn:hover i {
-    right: 0px;
+    margin-bottom: 50px;
   }
 
   /* project section */
   .project_section {
-    background: #f5f5f5;
-    padding: 50px 0;
+    padding: 100px 0 80px;
   }
 
   .project_section .title_position {
-    width: fit-content;
-    text-align: center;
-    margin-bottom: 38px;
+    margin: 0 auto 40px auto;
   }
 
   .project_section .project_flex {
-    display: flex;
-    justify-content: space-between;
-    gap: 125px;
+    flex-direction: column-reverse;
+    gap: 60px;
   }
 
   .project_section .swiper-button-next:after,
@@ -594,43 +576,17 @@
     display: none;
   }
 
-  .swiper-button-prev,
-  .swiper-rtl .swiper-button-next {
-    left: 0px;
-    border: 1px solid black;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-
-  .swiper-button-next,
-  .swiper-rtl .swiper-button-prev {
-    left: 50px;
-    border: 1px solid black;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-
   .swiper-button-next,
   .swiper-button-prev {
-    position: absolute;
-    top: unset;
-    bottom: 0;
-    z-index: 10;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: none;
   }
 
-  .project_section .project_flex .project_left .sub_title {
-    margin-top: 160px;
-    margin-bottom: 50px;
+  .project_section .project_flex .project_left .pro_title {
+    margin-bottom: 30px;
     font-weight: 700;
   }
 
-  .project_section .project_flex .project_left .sub_title + P {
+  .project_section .project_flex .project_left .pro_title + P {
     line-height: 30px;
   }
 
@@ -643,18 +599,38 @@
     border-radius: 100px;
   }
 
+  .project_section .swiper-pagination {
+    display: block;
+    position: unset;
+    margin-top: 30px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-right: 10px;
+  }
+
+  .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet:last-child {
+    margin-right: 0;
+  }
+
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+  }
+
   /* benefit section */
   .benefit_section {
-    padding: 120px 0 160px;
+    padding: 100px 0 120px;
   }
 
   .benefit_section .benefit_txt {
-    text-align: center;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
   }
 
   .benefit_section .benefit_flex {
     display: flex;
+    flex-wrap: wrap;
     padding: 0 142px;
     gap: 20px;
   }
@@ -662,14 +638,8 @@
   .benefit_section .benefit_flex .benefit_box {
     padding: 80px 0 40px 30px;
     border: 1px solid #cccccc;
-    width: 263px;
     height: 263px;
     transition: all 0.3s;
-  }
-
-  .benefit_section .benefit_flex .benefit_box:hover {
-    border: 1px solid #000;
-    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
   }
 
   .benefit_section .benefit_flex .benefit_box p {
@@ -680,19 +650,20 @@
 
   /* news section */
   .news_section {
-    padding: 120px 0 160px;
-    background-color: #f5f5f5;
+    padding: 100px 0 120px;
   }
 
   .news_section .news_txt {
-    width: fit-content;
-    text-align: center;
-    margin-bottom: 50px;
+    margin: 0 auto 40px auto;
   }
 
   .news_section .news_list {
     display: flex;
     justify-content: space-between;
+  }
+
+  .news_section .news_list .list_box {
+    width: calc(20% - 10px);
   }
 
   .news_section .news_list figure {
@@ -710,29 +681,24 @@
 
   /* footer */
   .footer {
-    background: #000000;
-    color: #ffffff;
-    font-weight: 400;
-    padding: 50px 276px 50px;
-    font-size: 20px;
+    padding: 40px 0;
+    font-size: 16px;
   }
 
   .footer .footer_flex_box {
-    display: flex;
-    justify-content: space-between;
-    gap: 155px;
+    flex-direction: column;
+    gap: unset;
   }
 
   .footer .footer_flex_box .footer_left {
-    display: flex;
+    flex-direction: column;
   }
-
+  
   .footer .footer_flex_box p {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
   }
-
+  
   .footer .footer_flex_box .footer_left .logo {
-    margin-right: 38px;
-    font-weight: 700;
+    margin-bottom: 20px;
   }
 }

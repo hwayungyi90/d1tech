@@ -87,6 +87,7 @@ a {
     font-size: 42px;
     /* 폰트사이즈 변경 가능성 있음 */
   }
+  
   .sub_title {
     font-size: 42px;
     /* 폰트사이즈 변경 가능성 있음 */
@@ -194,7 +195,7 @@ a {
   right: 5px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background: url("../images/arrow.png") no-repeat center;
+  background: url("../../assets/images/arrow.png") no-repeat center;
   width: 12px;
   height: 12px;
 }
