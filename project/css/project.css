@@ -91,3 +91,13 @@
 
 /* precast */
 
+.precast_img_list{
+  display: flex;
+  width: calc(50% - 30px);
+}
+
+.precast_img_list li{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
