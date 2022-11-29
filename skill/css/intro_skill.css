@@ -1,5 +1,9 @@
 /* skill */
 
+img {
+  max-width: 100%;
+}
+
 .sub_visual {
   background: url(../../assets/images/skill_main.jpg) no-repeat center;
 }
