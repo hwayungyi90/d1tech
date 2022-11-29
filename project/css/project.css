@@ -1,33 +1,17 @@
 /* main */
 
-.wrap{
+.wrapper{
   width: 100%;
   overflow: hidden;
 }
 
-.pro_main img{
-  width: 100%;
+.sub_visual{
+  background-image: url(/assets/images/pro_main.png);
 }
 
-.pro_main{
-  position: relative;
-}
-
-.pro_text_box{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  text-align: center;
-}
-
-.pro_main_txt{
-  margin-top: 20px;
-}
 
 .pro_intro{
-  padding: 100px 0;
+  padding: 100px 0 80px;
   text-align: center;
 }
 
@@ -38,16 +22,16 @@
   margin-bottom: 80px;
 }
 
-figure {
+.pro_list figure {
   transition: opacity 0.2s; 
   position: relative; 
 }
 
-figure img {
+.pro_list figure img {
   width: 100%;
 }
 
-figure figcaption {
+.pro_list figure figcaption {
   color: #fff;
   bottom: 60px; 
   left: 30px;
@@ -57,23 +41,23 @@ figure figcaption {
   transition: all .3s ease;
 }
 
-figure .gallery-img {
+.pro_list figure .gallery-img {
   opacity: 1;
   transition: all 0.3s ease 0s;
   overflow: hidden;
   border-radius: 30px;
 }
 
-figure:hover .gallery-img {
+.pro_list figure:hover .gallery-img {
   background: rgba(0, 0, 0, 0.5);
 }
 
-figure:hover img {
+.pro_list figure:hover img {
   transition: all .3s ease;
   opacity: 0.15;
 }
 
-figure:hover figcaption {
+.pro_list figure:hover figcaption {
   opacity: 1;
   transition: all .3s ease; 
 }
@@ -154,8 +138,41 @@ figure:hover figcaption {
   height: 56px;
 }
 
+.bg_tit{
+  font-size: 55px;
+}
+
 .Precast_tit{
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1024px){
+  .pro_intro{
+    padding: 80px 0 60px;
+  }
+
+  .pro_list{
+    gap: 20px;
+    margin-bottom: 60px;
+  }
+
+  .bg_tit{
+  font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .pro_intro{
+    padding: 60px 0 40px;
+  }
+
+  .pro_list{
+    display: block;
+  }
+
+  .pro_list figure{
+    margin-top: 15px;
+  }
 }
 
 /* house */
@@ -187,8 +204,8 @@ figure:hover figcaption {
   font-size: 55px;
 }
 
-.title_under{
-  /* padding-bottom: 120px; */
+.btn_top{
+  padding-bottom: 120px;
 }
 
 .sub_tit{
@@ -226,12 +243,13 @@ figure:hover figcaption {
   }
 
   .house_intro {
-    padding: 100px 0 70px;
+    padding: 80px 0 60px;
   }
 
-  .title_under {
+  .btn_top{
     padding-bottom: 80px;
   }
+
   .sub_tit {
     margin-top: 14px;
     font-size: 30px;
@@ -248,8 +266,16 @@ figure:hover figcaption {
 }
 
 @media screen and (max-width: 767px){
+  .house_intro {
+    padding: 60px 0 40px;
+  }
+
   .pro_intro_title{
     font-size: 36px;
+  }
+
+  .btn_top{
+    padding-bottom: 60px;
   }
 
   .sub_tit {
@@ -329,7 +355,19 @@ figure:hover figcaption {
 }
 
 @media screen and (max-width: 767px){
+  .precast_img_list figure{
+    width: 100%;
+  }
+  
   .precast_img_list li{
     display: block;
+  }
+
+  .precast_img_wrap:nth-child(2) img{
+    margin-top: 15px;
+  }
+
+  .Military{
+    margin-top: 0px;
   }
 }
