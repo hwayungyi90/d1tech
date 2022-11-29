@@ -38,7 +38,6 @@
 .history_cont .cont_wrap {
   display: flex;
   justify-content: space-between;
-  margin-top: 150px;
 }
 .history_cont .cont_wrap .section_title {
   font-weight: 700;
@@ -69,4 +68,22 @@
 }
 .cont_wrap.cont_revers .list_text li span {
   padding: 0 0 0 20px;
+}
+@media screen and (max-width: 1024px) {
+  .history_cont:before {
+    left: 0;
+  }
+  .history_cont .cont_wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+  .history_cont .cont_wrap.cont_revers {
+    flex-direction: column;
+  }
+  .history_cont .cont_wrap.cont_revers .section_title {
+    text-align: left;
+  }
+  .history_cont .cont_wrap.cont_revers .list_text li {
+    flex-direction: row;
+  }
 }

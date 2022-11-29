@@ -22,6 +22,13 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.pc_only {
+  display: block;
+}
+.ta_only,
+.mo_only {
+  display: none;
+}
 
 .inner_container {
   max-width: 1680px;
@@ -62,17 +69,19 @@ a {
   font-size: 20px;
   font-weight: 400;
 }
-
-.sub_title {
-  font-size: 42px;
-  font-weight: 700;
-}
 .desc {
   font-size: 20px;
   font-weight: 400;
 }
 
 @media screen and (max-width: 1024px) {
+  .pc_only,
+  .mo_only {
+    display: none;
+  }
+  .ta_only {
+    display: block;
+  }
   .main_title {
     font-size: 42px;
     /* 폰트사이즈 변경 가능성 있음 */
@@ -102,6 +111,13 @@ a {
 }
 
 @media screen and (max-width: 767px) {
+  .pc_only,
+  .ta_only {
+    display: none;
+  }
+  .mo_only {
+    display: block;
+  }
   .main_title {
     font-size: 30px;
     /* 폰트사이즈 변경 가능성 있음 */
@@ -112,17 +128,13 @@ a {
   }
 
   .section_title {
-    font-size: 42px;
+    font-size: 30px;
     line-height: 58px;
   }
 
   .title_under {
     font-size: 16px;
     font-weight: 400;
-  }
-
-  .sub_title {
-    font-size: 20px;
   }
 
   .desc {
