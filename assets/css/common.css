@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Play:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -8,9 +8,8 @@
 
 html,
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 20px;
-  word-break: keep-all;
 }
 
 ul,
@@ -21,6 +20,13 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+}
+.pc_only {
+  display: block;
+}
+.ta_only,
+.mo_only {
+  display: none;
 }
 
 .inner_container {
@@ -53,6 +59,10 @@ img {
   font-size: 55px;
   /* 폰트사이즈 변경 가능성 있음 */
 }
+.sub_title {
+  font-size: 55px;
+  /* 폰트사이즈 변경 가능성 있음 */
+}
 
 .sub_title {
   font-size: 55px;
@@ -72,90 +82,15 @@ img {
 .title_under {
   font-size: 20px;
   font-weight: 400;
-}
+ }
 
 .sub_title {
   font-size: 42px;
-  font-weight: 700;
 }
 .desc {
   font-size: 20px;
   font-weight: 400;
 }
-
-/* tablet */
-@media screen and (max-width: 1024px) {
-  .sub_visual {
-    height: 350px;
-  }
-
-  .inner_title {
-    margin-top: 80px;
-  }
-
-  .main_title {
-    font-size: 42px;
-    /* 폰트사이즈 변경 가능성 있음 */
-  }
-
-  .sub_title {
-    font-size: 42px;
-    /* 폰트사이즈 변경 가능성 있음 */
-  }
-
-  .section_title {
-    font-size: 42px;
-    line-height: 57px;
-  }
-
-  .title_under {
-    font-size: 18px;
-    font-weight: 400;
-  }
-
-  .sub_title {
-    font-size: 30px;
-  }
-
-  .desc {
-    font-size: 18px;
-  }
-}
-
-/* mobile */
-@media screen and (max-width: 767px) {
-  .inner_title {
-    margin-top: 60px;
-  }
-  
-  .main_title {
-    font-size: 30px;
-    /* 폰트사이즈 변경 가능성 있음 */
-  }
-  .sub_title {
-    font-size: 30px;
-    /* 폰트사이즈 변경 가능성 있음 */
-  }
-
-  .section_title {
-    font-size: 30px;
-    line-height: 41px;
-  }
-
-  .title_under {
-    font-size: 16px;
-    font-weight: 400;
-  }
-
-  .sub_title {
-    font-size: 20px;
-  }
-
-  .desc {
-    font-size: 16px;
-  }
-}
-
 /* 서브페이지 메인비주얼 */
 .sub_visual {
   width: 100%;
@@ -204,27 +139,4 @@ img {
 
 .more_btn:hover i {
   right: 0px;
-}
-
-@media screen and (max-width: 1024px) {
-  .more_btn {
-    font-size: 18px;
-  }
-
-  /* sub */
-  .intro_wrap .main_visual {
-    height: 350px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .more_btn {
-    font-size: 16px;
-  }
-
-  /* mobile sub */
-  .intro_wrap .main_visual {
-    height: 250px;
-  }
-
 }

@@ -11,12 +11,6 @@ window.onload = function () {
   let clickPa = clickList.parent;
   console.log(clickPa);
 
-  for (let i = 0; i < twoList.length; i++) {
-    twoList[i].addEventListener("mouseenter", function () {
-      this.prev(depthOne).classList.add("active");
-    })
-  }
-
   menuWhole.addEventListener("mouseenter", function () {
     menuBg.style.setProperty('height', '380px');
     for (let j = 0; j < depthTwo.length; j++) {
@@ -30,16 +24,4 @@ window.onload = function () {
       depthTwo[j].style.setProperty('display', 'none');
     }
   })
-
-  // for (let i=0; i<clickList.length; i++) {
-  //   clickList[i].addEventListener("mouseenter", function() {
-  //     for (let j=0; j<clickList.length; j++) {
-  //       if (clickList[j] == this) {
-  //           clickList[j].classList.add("active")
-  //       } else {
-  //           clickList[j].classList.remove("active")
-  //       }
-  //     }
-  //   });
-  // }
 }

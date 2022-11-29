@@ -1,0 +1,73 @@
+.main_visual {
+  width: 100%;
+  height: 550px;
+  background: url(../../assets/images/introduction_main.png) no-repeat center;
+  background-size: cover;
+}
+.main_visual .main_text {
+  padding: 210px 0;
+  text-align: center;
+  color: #fff;
+}
+.inner_title {
+  margin-top: 100px;
+  text-align: center;
+}
+.section_title .t_light {
+  font-weight: 300;
+}
+.inner_container .cont {
+  margin: 100px auto;
+}
+.manage_cont {
+  margin: 80px 0 100px;
+}
+.manage_list {
+  display: flex;
+  gap: 90px;
+  justify-content: center;
+  align-items: center;
+}
+.manage_list li {
+  max-width: 405px;
+}
+.manage_list li img {
+  width: 100%;
+}
+.manage_list .desc {
+  width: 95%;
+  margin: 50px auto 0;
+  text-align: center;
+  word-break: keep-all;
+}
+@media screen and (max-width: 1024px) {
+  .inner_container .cont {
+    margin: 80px auto;
+  }
+  .inner_container .intro_cont,
+  .inner_title {
+    margin-top: 80px;
+  }
+  .manage_list {
+    gap: 40px;
+  }
+  .manage_list .desc {
+    margin: 30px auto 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .inner_container .cont {
+    margin: 60px auto;
+  }
+  .inner_container .intro_cont,
+  .inner_title {
+    margin-top: 60px;
+  }
+  .manage_list {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .manage_list .desc {
+    margin: 15px auto 0;
+  }
+}
