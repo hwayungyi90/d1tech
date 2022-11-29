@@ -1,0 +1,51 @@
+.history_cont {
+  position: relative;
+  max-width: 1396px;
+  width: 100%;
+  margin: 0 auto;
+}
+.history_cont:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1px;
+  height: 100%;
+  background: #000;
+  transform: translateX(-50%);
+}
+.history_cont .cont_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 150px;
+}
+.history_cont .cont_wrap .section_title {
+  font-weight: 700;
+}
+.history_cont .cont_wrap.cont_revers {
+  flex-direction: row-reverse;
+}
+.history_cont .cont_wrap .cont_year {
+  max-width: 628px;
+  width: 100%;
+}
+.history_cont .cont_wrap.cont_revers .section_title {
+  text-align: right;
+}
+.history_cont .cont_year .list_text li {
+  display: flex;
+}
+.history_cont .cont_wrap .list_text li {
+  margin-top: 10px;
+  letter-spacing: -1px;
+}
+.history_cont .cont_wrap.cont_revers .list_text li {
+  flex-direction: row-reverse;
+}
+.cont_wrap .list_text li span {
+  padding-right: 20px;
+  font-weight: 700;
+}
+.cont_wrap.cont_revers .list_text li span {
+  padding: 0 0 0 20px;
+}
