@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Play:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -8,8 +8,9 @@
 
 html,
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 20px;
+  word-break: keep-all;
 }
 
 ul,
@@ -31,16 +32,36 @@ img {
   max-width: 100%;
 }
 
+.inner_title {
+  margin-top: 100px;
+  text-align: center;
+}
 
+@media screen and (max-width: 1680px) {
+  .inner_container {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .inner_container {
+    padding: 0 20px;
+  }
+}
 
 .main_title {
   font-size: 55px;
   /* 폰트사이즈 변경 가능성 있음 */
 }
 
-.section_title {
+.sub_title {
   font-size: 55px;
   font-weight: 600;
+  /* 폰트사이즈 변경 가능성 있음 */
+}
+
+.section_title {
+  font-size: 55px;
   line-height: 75px;
 }
 
@@ -51,31 +72,107 @@ img {
 .title_under {
   font-size: 20px;
   font-weight: 400;
- }
+}
 
 .sub_title {
   font-size: 42px;
+  font-weight: 700;
 }
 .desc {
   font-size: 20px;
   font-weight: 400;
 }
+
+/* tablet */
+@media screen and (max-width: 1024px) {
+  .sub_visual {
+    height: 350px;
+  }
+
+  .inner_title {
+    margin-top: 80px;
+  }
+
+  .main_title {
+    font-size: 42px;
+    /* 폰트사이즈 변경 가능성 있음 */
+  }
+
+  .sub_title {
+    font-size: 42px;
+    /* 폰트사이즈 변경 가능성 있음 */
+  }
+
+  .section_title {
+    font-size: 42px;
+    line-height: 57px;
+  }
+
+  .title_under {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .sub_title {
+    font-size: 30px;
+  }
+
+  .desc {
+    font-size: 18px;
+  }
+}
+
+/* mobile */
+@media screen and (max-width: 767px) {
+  .inner_title {
+    margin-top: 60px;
+  }
+  
+  .main_title {
+    font-size: 30px;
+    /* 폰트사이즈 변경 가능성 있음 */
+  }
+  .sub_title {
+    font-size: 30px;
+    /* 폰트사이즈 변경 가능성 있음 */
+  }
+
+  .section_title {
+    font-size: 30px;
+    line-height: 41px;
+  }
+
+  .title_under {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .sub_title {
+    font-size: 20px;
+  }
+
+  .desc {
+    font-size: 16px;
+  }
+}
+
 /* 서브페이지 메인비주얼 */
-.main_visual {
+.sub_visual {
   width: 100%;
   height: 550px;
-  background: url(../images/introduction_main.png) no-repeat center;
   background-size: cover;
+
+  /* 서브페이지 텍스트 가운데 정렬*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.main_visual .main_text {
-  padding: 210px 0;
+
+.sub_visual .main_text {
   text-align: center;
   color: #fff;
 }
-.inner_title {
-  margin-top: 100px;
-  text-align: center;
-}
+
 .section_title .t_light {
   font-weight: 300;
 }
@@ -109,76 +206,25 @@ img {
   right: 0px;
 }
 
-/* grid */
-
-.grid_container {
-  display: flex;
-  gap: 20px;
-  min-width: 100%;
-  flex-wrap: wrap;
-  
-}
-
-.grid_row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid_title {
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.grid_desc {
-  font-size: 20px;
-  font-weight: 400;
-  
-}
-/* pc */
-@media screen and (max-width: 1680px) {
-  .inner_container {
-    padding: 0 32px;
+@media screen and (max-width: 1024px) {
+  .more_btn {
+    font-size: 18px;
   }
 
-  
+  /* sub */
+  .intro_wrap .main_visual {
+    height: 350px;
+  }
 }
 
-/* tablet */
 @media screen and (max-width: 767px) {
-  .inner_container {
-    padding: 0 32px;
-  }
-
-  .section_title {
-    font-size: 42px;
-  }
-}
-
-/* mobile */
-@media screen and (max-width: 412px) {
-  .inner_container {
-    padding: 0 20px;
-  }
-
-  .main_visual {
-    height: 250px;
-  }
-
-  .section_title {
-    font-size: 36px;
-  }
-
-  .title {
-    font-size: 36px;
-    font-weight: 600;
-  }
-
-  .title_desc {
+  .more_btn {
     font-size: 16px;
   }
 
-  .skill th {
-    font-size: 36px;
+  /* mobile sub */
+  .intro_wrap .main_visual {
+    height: 250px;
   }
 
 }
