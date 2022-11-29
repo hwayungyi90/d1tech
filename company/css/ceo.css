@@ -1,3 +1,24 @@
+.main_visual {
+  width: 100%;
+  height: 550px;
+  background: url(../../assets/images/introduction_main.png) no-repeat center;
+  background-size: cover;
+}
+.main_visual .main_text {
+  padding: 210px 0;
+  text-align: center;
+  color: #fff;
+}
+.inner_title {
+  margin-top: 100px;
+  text-align: center;
+}
+.section_title .t_light {
+  font-weight: 300;
+}
+.inner_container .cont {
+  margin: 100px auto;
+}
 .ceo_cont {
   max-width: 1396px;
   margin: 0 auto;
