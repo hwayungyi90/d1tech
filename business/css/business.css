@@ -7,6 +7,10 @@
   width: 100%;
 }
 
+.business_page .business_main .sub_visual {
+  background: url("../../assets/images/business_visual.png");
+}
+
 .business_page .business_main .main_txt_position {
   position: absolute;
   top: 50%;
@@ -45,6 +49,14 @@
 
 .business_page .business_intro .business_desc figure {
   margin-bottom: 28px;
+  width: 100%;
+  height: 100%;
+}
+
+.business_page .business_intro .business_desc figure img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
 }
 
 .business_page .business_intro .business_img_flex {
