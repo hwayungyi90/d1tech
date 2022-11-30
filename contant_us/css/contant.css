@@ -13,7 +13,7 @@ img{border: 0; vertical-align: top;}
   border-radius: 30px;
 }
 
-.contact_text_box{
+.title_under{
   padding-bottom: 100px;
 }
 
@@ -40,7 +40,6 @@ img{border: 0; vertical-align: top;}
 }
 
 .more_con_btn {
-  padding-right: 24px;
   line-height: 35px;
   color: #fff;
   border: 2px solid #fff;
@@ -109,13 +108,24 @@ img{border: 0; vertical-align: top;}
     padding: 80px 60px;
   }
 
-  .more_con_btn {
-    top: 40px;
-  }
-
   .line{
     margin-top: 52px;
     margin-bottom: 52px;
+  }
+
+  .more_con_btn {
+  top: 40px;
+  padding: 8px 20px;
+  padding-right: 40px;
+  font-size: 18px;
+  }
+
+.more_con_btn i {
+  right: 20px;
+  }
+
+.more_con_btn:hover i {
+  right: 15px;
   }
 }
 
@@ -153,9 +163,9 @@ img{border: 0; vertical-align: top;}
   .contact_list li:nth-child(1) .con_text_box::before {
     position: absolute;
     content: '';
-    width: 60%;
+    width: 70%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.389), transparent);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), transparent);
     top: 0;
     left: 0;
     z-index: -1;
@@ -171,9 +181,9 @@ img{border: 0; vertical-align: top;}
   .contact_list li:nth-child(2) .con_text_box::before {
     position: absolute;
     content: '';
-    width: 60%;
+    width: 70%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.389), transparent);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), transparent);
     top: 0;
     left: 0;
     z-index: -1;
@@ -189,9 +199,9 @@ img{border: 0; vertical-align: top;}
   .contact_list li:nth-child(3) .con_text_box::before {
     position: absolute;
     content: '';
-    width: 60%;
+    width: 70%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(0, 0, 0, 0.389), transparent);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.4), transparent);
     top: 0;
     left: 0;
     z-index: -1;
@@ -212,5 +222,20 @@ img{border: 0; vertical-align: top;}
   .line{
     margin-top: 34px;
     margin-bottom: 34px;
+  }
+
+  .more_con_btn {
+  top: 50px;
+  padding: 6px 15px;
+  padding-right: 40px;
+  font-size: 16px;
+  }
+
+.more_con_btn i {
+  right: 20px;
+  }
+
+.more_con_btn:hover i {
+  right: 15px;
   }
 }
