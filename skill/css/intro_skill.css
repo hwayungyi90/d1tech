@@ -127,6 +127,10 @@ img {
     margin-top: 80px;
   }
 
+  .skill_list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .skill_table .grid_row {
     grid-template-columns: 1fr 1fr 0.7fr
   }
