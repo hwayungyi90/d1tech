@@ -4,8 +4,14 @@ img {
   max-width: 100%;
 }
 
+.type_img {
+  width: fit-content;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
 .sub_visual {
-  background: url(../../assets/images/skill_main.jpg) no-repeat center;
+  background: url(../../assets/images/skill_main.png) no-repeat center;
 }
 
 .inner_title {
@@ -80,7 +86,9 @@ img {
 
 /* skill sub*/
 .skill_sub_cont {
+  display: flex;
   align-items: center;
+  justify-content: center;
   text-align: center;
   margin: 100px auto 150px;
 }
@@ -96,6 +104,8 @@ img {
   gap: 40px;
   align-items: center;
 }
+
+
 
 .type_circle {
   width: 248px;
