@@ -9,6 +9,10 @@ img{border: 0; vertical-align: top;}
   background-image: url(/assets/images/contact_main.png);
 }
 
+.contact_list_wrap{
+  border-radius: 30px;
+}
+
 .contact_text_box{
   padding-bottom: 100px;
 }
@@ -20,6 +24,8 @@ img{border: 0; vertical-align: top;}
 .gray_box {
   display: flex;
   width: 100%;
+  border-radius: 30px;
+  overflow: hidden;
 }
 
 .con_text_box{
