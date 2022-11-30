@@ -147,8 +147,8 @@
 
 .main_section .main_text_box {
   position: absolute;
-  top: 116px;
-  left: 190px;
+  top: 6.0417vw;
+  left: 9.8958vw;
   max-width: 590px;
 }
 
@@ -328,10 +328,16 @@
   justify-content: space-between;
 }
 
+.benefit_section .benefit_flex a {
+  display: block;
+  width: calc(20% - 10px);
+}
+
 .benefit_section .benefit_flex .benefit_box {
   padding: 80px 30px 40px 30px;
   border: 1px solid #cccccc;
-  width: 263px;
+  /* width: 263px; */
+  width: 100%;
   transition: all 0.3s;
 }
 
@@ -341,9 +347,9 @@
 }
 
 .benefit_section .benefit_flex .benefit_box p {
-  font-size: 32px;
+  font-size: 1.6667vw;
   font-weight: 500;
-  line-height: 43px;
+  line-height: 2.2396vw;
 }
 
 /* news section */
@@ -752,17 +758,18 @@
   }
 
   .benefit_section .benefit_flex {
-    display: flex;
     flex-wrap: wrap;
-    padding: 0 142px;
+    padding: 0;
     gap: 20px;
+    justify-content: flex-start;
+  }
+
+  .benefit_section .benefit_flex a {
+    width: calc(33.33% - 14px);
   }
 
   .benefit_section .benefit_flex .benefit_box {
-    padding: 80px 0 40px 30px;
-    border: 1px solid #cccccc;
-    height: 263px;
-    transition: all 0.3s;
+    width: 100%;
   }
 
   .benefit_section .benefit_flex .benefit_box p {
@@ -955,17 +962,12 @@
   }
 
   .benefit_section .benefit_flex {
-    display: flex;
     flex-wrap: wrap;
-    padding: 0 142px;
-    gap: 20px;
+    padding: 0;
   }
 
-  .benefit_section .benefit_flex .benefit_box {
-    padding: 80px 0 40px 30px;
-    border: 1px solid #cccccc;
-    height: 263px;
-    transition: all 0.3s;
+  .benefit_section .benefit_flex a {
+    width: 100%;
   }
 
   .benefit_section .benefit_flex .benefit_box p {
@@ -994,7 +996,7 @@
   }
 
   .news_section .news_list figure {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
   }
 
   .news_section .news_list img {
