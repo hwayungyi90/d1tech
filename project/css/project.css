@@ -112,7 +112,7 @@
 .two::after{
   content: "";     
   position: absolute;
-  top: 10px;
+  top: 12px;
   left: 11px;
   background-image: url(/assets/images/sculpture.png);
   background-size: cover;
