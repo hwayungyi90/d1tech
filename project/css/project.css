@@ -138,26 +138,79 @@
   height: 56px;
 }
 
-.bg_tit{
+.bg_tit, .Precast_tit{
   font-size: 42px;
-}
-
-.Precast_tit{
   margin-bottom: 30px;
-  font-size: 42px;
+  margin-top: 10px;
 }
 
-@media screen and (min-width: 1025px) and (max-width: 1100px){
-  .bg_tit{
-    font-size: 28px;
+.more_pro_btn {
+  padding-right: 24px;
+  line-height: 35px;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  position: relative;
+}
+
+.more_pro_btn i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-5px);
+  right: 5px;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background: url("../../assets/images/more_Arrow.png") no-repeat center;
+  width: 12px;
+  height: 12px;
+}
+
+.more_pro_btn:hover i {
+  right: 0px;
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px){
+  .pro_list figure figcaption {
+    bottom: 40px; 
   }
 
-  .Precast_tit{
-    font-size: 28px;
+  .one, .two, .three{
+    width: 60px;
+    height: 60px;
+  }
+
+  .one::after{
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .two::after{
+    top: 11px;
+    left: 9px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .three::after{
+    top: 11px;
+    left: 11px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .bg_tit, .Precast_tit{
+    font-size: 36px;
+    margin-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 1024px){
+  .pro_list figure figcaption {
+  bottom: 30px; 
+  }
+
   .pro_intro{
     padding: 80px 0 60px;
   }
@@ -167,12 +220,49 @@
     margin-bottom: 60px;
   }
 
+  .one, .two, .three{
+    width: 60px;
+    height: 60px;
+  }
+
+  .one::after{
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .two::after{
+    top: 11px;
+    left: 9px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .three::after{
+    top: 11px;
+    left: 11px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .bg_tit, .Precast_tit{
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+
+  .more_pro_btn {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 950px){
   .bg_tit{
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .Precast_tit{
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 
@@ -187,6 +277,10 @@
 
   .pro_list figure{
     margin-top: 15px;
+  }
+
+  .more_pro_btn {
+    font-size: 16px;
   }
 }
 
@@ -306,7 +400,7 @@
     margin-bottom: 40px;
   }  
 
-  .house4{
+  .img_list_second li:nth-child(2) img{
     margin-top: 15px;
   }
 }
@@ -315,12 +409,6 @@
 
 .sculpture_img_wrap img{
   width: 100%;
-}
-
-@media screen and (max-width: 767px){
-  .sculpture3{
-    margin-top: 15px;
-  }
 }
 
 /* precast */
@@ -351,7 +439,7 @@
   gap: 30px;
 }
 
-.Military{
+.precast_img_list_fore{
   margin-top: 80px;
 }
 
@@ -364,7 +452,7 @@
   width: calc(50% - 10px);
   }
 
-.Military{
+.precast_img_list_fore{
   margin-top: 60px;
   }
 }
@@ -382,7 +470,7 @@
     margin-top: 15px;
   }
 
-  .Military{
+  .precast_img_list_fore{
     margin-top: 0px;
   }
 }
