@@ -22,6 +22,10 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.blind {
+  font-size: 0;
+}
 .pc_only {
   display: block;
 }
@@ -102,10 +106,6 @@ a {
     font-weight: 400;
   }
 
-  .sub_title {
-    font-size: 30px;
-  }
-
   .desc {
     font-size: 18px;
   }
@@ -134,7 +134,7 @@ a {
 
   .section_title {
     font-size: 30px;
-    line-height: 58px;
+    line-height: 42px;
   }
 
   .title_under {
