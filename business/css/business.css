@@ -1,6 +1,9 @@
 h1.blind {
   font-size: 0;
 }
+.sub_visual {
+  background: url(../../assets/images/business_visual.png) 
+}
 
 .business_page .business_main {
   position: relative;
