@@ -10,8 +10,7 @@ img{border: 0; vertical-align: top;}
 }
 
 .contact_text_box{
-  padding: 100px 0;
-  text-align: center;
+  padding-bottom: 100px;
 }
 
 .contact_list li{
@@ -96,6 +95,10 @@ img{border: 0; vertical-align: top;}
 }
 
 @media screen and (max-width: 1024px){
+  .contact_text_box{
+    padding-bottom: 80px;
+  }
+
   .con_text_box {
     padding: 80px 60px;
   }
@@ -110,7 +113,26 @@ img{border: 0; vertical-align: top;}
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 940px){
+  .con_text_box {
+    padding: 80px 40px;
+  }
+
+  .con_tit{
+    font-size: 38px;
+  }
+
+  .more_con_btn {
+    top: 40px;
+  }
+}
+
+
 @media screen and (max-width: 767px){
+  .contact_text_box{
+    padding-bottom: 60px;
+  }
+
   .gray_box {
     display: block;
   }
