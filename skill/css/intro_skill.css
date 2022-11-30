@@ -8,11 +8,19 @@ img {
   background: url(../../assets/images/skill_main.jpg) no-repeat center;
 }
 
+.inner_title {
+  margin-bottom: 60px;
+}
+
+.inner_title .desc {
+  margin-top: 10px;
+}
+
 .skill_cont {
-  display: grid;
-  align-items: center;
-  grid-template-columns: 1fr 2fr;
-  margin-top: 176px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  
 }
 
 .skill_list {
@@ -32,21 +40,6 @@ img {
   text-align: center;
 }
 
-.grid_row {
-  display: grid;
-  border-bottom: 1px solid #000;
-}
-
-.skill_table .grid_row {
-  grid-template-columns: repeat(3, 1fr );
-  padding: 43px 0;
-  align-items: center;
-}
-
-.skill_table .grid_row {
-    grid-template-columns: 1.5fr 2fr 1fr;
-  }
-
 .skill_title {
   font-size: 20px;
   font-weight: 700;
@@ -58,13 +51,31 @@ img {
   color: #666;
 }
 
-.skill_table .txt_box {
-  padding: 14px 30px;
+.skill_cont .txt_box {
+  width: fit-content;
+  padding: 10px 20px;
   border: 1px solid #000;
+  font-size: 18px;
 }
 
-.skill_table .more_btn {
+.skill_cont .more_btn {
   border-bottom: none;
+}
+
+.skill_table > .skill_cont {
+  padding: 30px 0;
+  border-bottom: 1px solid #000;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill_cont .skill_table p{
+  width: 350px;
+}
+
+.skill_table {
+  width: fit-content;
+  max-width: 972px;
 }
 
 /* skill sub*/
@@ -122,17 +133,8 @@ img {
 
 /* tablet */
 @media screen and (max-width: 1024px) {
-  .skill_cont {
-    display: block;
-    margin-top: 80px;
-  }
-
   .skill_list {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .skill_table .grid_row {
-    grid-template-columns: 1fr 1fr 0.7fr
   }
 
   .type_circle {
@@ -153,7 +155,7 @@ img {
     font-size: 24px;
   }
 
-  .skill_table {
+  .skill_flex {
     font-size: 18px;
   }
 
@@ -162,27 +164,22 @@ img {
   }
 
   .txt_box {
-    pad: 15px 20px;
+    padding: 15px 20px;
   }
 
-  .more_btn {
-    font-size: 18px;
+  .skill_table > .skill_cont .skill_cont {
+    width: 50%;
   }
   
 }
 
 /* mobile */
 @media screen and (max-width: 767px) {
-  .skill_cont {
+  .skill_table {
     margin-top: 80px;
   }
 
-  .skill_table .grid_row {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  .skill_table .txt_box {
+  .skill_flex .txt_box {
     margin-top: 20px;
   }
 
@@ -233,5 +230,19 @@ img {
   .more_btn {
     font-size: 16px;
   }
+
+  .skill_table > .skill_cont {
+    gap: 30px;
+  }
+
+  .skill_table > .skill_cont .skill_cont {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .skill_table > .skill_cont .skill_cont p {
+    width: 100%;
+  }
+
 
 }
