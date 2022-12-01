@@ -11,13 +11,16 @@
   word-break: keep-all;
 }
 
-.business_img {
+.business_img picture{
   border-radius: 30px;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .business_img img {
-  height: 100%;
+  width: 100%;
 }
 
 .inner_title .desc {
@@ -152,7 +155,6 @@
     width: 320px;
     height: 320px;
   }
-
   
 }
 
@@ -198,13 +200,5 @@
 
   .materials_text .desc_title span {
     margin: 25px 0 20px;
-  }
-
-  .business_img { 
-    max-height: 300px;
-  }
-
-  .business_img img {
-    max-height: 310px;
   }
 }
