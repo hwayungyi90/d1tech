@@ -1,4 +1,7 @@
 /* materials */
+.sub_visual {
+  background: url(../../assets/images/business_visual.png);
+}
 
 .sub_visual {
   background: url(../../assets/images/business_visual.png);
