@@ -69,7 +69,7 @@
   font-weight: 700;
 }
 
-.materials_text .desc_title p {
+.materials_text .desc_title span {
   font-size: 20px;
   margin: 40px 0 20px;
 }
@@ -121,6 +121,10 @@
   font-size: 18px;
 }
 
+.materials_text .desc_title span {
+  display: block;
+}
+
 /* tablet */
 @media screen and (max-width: 1024px) {
   .desc_box {
@@ -133,7 +137,7 @@
     font-size: 20px;
   }
 
-  .materials_text .desc_title p {
+  .materials_text .desc_title span {
     font-size: 18px;
   }
 
