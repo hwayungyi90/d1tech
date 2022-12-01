@@ -22,6 +22,10 @@
 .inner_container .intro_cont {
   margin-top: 100px;
 }
+.intro_cont .list_img {
+  border-radius: 30px;
+  overflow: hidden;
+}
 .intro_cont .list_img img {
   width: 100%;
 }
