@@ -61,6 +61,10 @@
   margin-bottom: 28px;
 }
 
+.business_page .business_cont .business_desc img {
+  border-radius: 30px;
+}
+
 .business_page .business_cont .business_img_flex {
   display: flex;
   justify-content: space-between;
