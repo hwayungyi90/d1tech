@@ -250,5 +250,12 @@ img {
     width: 100%;
   }
 
+  .type_flex {
+    gap: 25px;
+  }
+
+  .skill_sub_cont {
+    margin: 60px auto 0;
+  }
 
 }

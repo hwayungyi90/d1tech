@@ -3,6 +3,10 @@
   background: url(../../assets/images/business_visual.png);
 }
 
+.sub_visual {
+  background: url(../../assets/images/business_visual.png);
+}
+
 .business {
   word-break: keep-all;
 }
@@ -68,7 +72,7 @@
   font-weight: 700;
 }
 
-.materials_text .desc_title p {
+.materials_text .desc_title span {
   font-size: 20px;
   margin: 40px 0 20px;
 }
@@ -120,6 +124,10 @@
   font-size: 18px;
 }
 
+.materials_text .desc_title span {
+  display: block;
+}
+
 /* tablet */
 @media screen and (max-width: 1024px) {
   .desc_box {
@@ -132,7 +140,7 @@
     font-size: 20px;
   }
 
-  .materials_text .desc_title p {
+  .materials_text .desc_title span {
     font-size: 18px;
   }
 
@@ -170,7 +178,7 @@
     border: none;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    padding: 20px 0;
+    padding: 25px 0;
   }
   .materials_text:nth-child(1) {
     padding: 0;
@@ -180,5 +188,13 @@
   .materials_text:nth-child(3) {
     padding: 0;
     padding-top: 20px;
+  }
+
+  .desc_box {
+    padding: 30px;
+  }
+
+  .materials_text .desc_title span {
+    margin: 25px 0 20px;
   }
 }
