@@ -1,12 +1,16 @@
 /* skill */
 
-.type_img {
+.type_img picture{
   width: fit-content;
   border-radius: 30px;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.type_img img {
+  width: 100%;
 }
 
 .sub_visual {
@@ -175,14 +179,6 @@
   .skill_table > .skill_cont .skill_cont {
     width: 50%;
   }
-
-  .type_img { 
-    max-height: 400px;
-  }
-
-  .type_img img {
-    max-height: 410px;
-  }
 }
 
 /* mobile */
@@ -263,13 +259,4 @@
   .skill_sub_cont {
     margin: 60px auto 0;
   }
-
-  .type_img { 
-    max-height: 300px;
-  }
-
-  .type_img img {
-    max-height: 310px;
-  }
-
 }
