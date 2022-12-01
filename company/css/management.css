@@ -24,7 +24,7 @@
   display: flex;
   gap: 90px;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 .manage_list li {
   max-width: 405px;
