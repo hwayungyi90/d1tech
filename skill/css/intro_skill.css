@@ -1,9 +1,5 @@
 /* skill */
 
-img {
-  max-height: 100%;
-}
-
 .type_img {
   width: fit-content;
   border-radius: 30px;
@@ -179,7 +175,14 @@ img {
   .skill_table > .skill_cont .skill_cont {
     width: 50%;
   }
-  
+
+  .type_img { 
+    max-height: 400px;
+  }
+
+  .type_img img {
+    max-height: 410px;
+  }
 }
 
 /* mobile */
