@@ -254,5 +254,8 @@ img {
     gap: 25px;
   }
 
+  .skill_sub_cont {
+    margin: 60px auto 0;
+  }
 
 }
