@@ -8,6 +8,9 @@ img {
   width: fit-content;
   border-radius: 30px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sub_visual {
