@@ -264,4 +264,12 @@
     margin: 60px auto 0;
   }
 
+  .type_img { 
+    max-height: 300px;
+  }
+
+  .type_img img {
+    max-height: 310px;
+  }
+
 }
