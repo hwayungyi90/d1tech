@@ -1,5 +1,9 @@
 /* materials */
 
+.sub_visual {
+  background: url(../../assets/images/business_visual.png);
+}
+
 .business {
   word-break: keep-all;
 }
