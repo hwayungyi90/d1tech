@@ -25,4 +25,13 @@ window.onload = function () {
       this.classList.toggle("active");
     })
   }
+
+  //ceo 아코디언
+  let anchor = document.querySelectorAll('.list_title');
+
+  for (let i = 0; i < anchor.length; i++) {
+    anchor[i].addEventListener("click", function () {
+      this.classList.toggle('on');
+    })
+  }
 }
