@@ -29,6 +29,7 @@
   width: 100%;
   height: 100%;
   display: block;
+  border-radius: 30px;
 }
 
 .pro_list figure figcaption {
@@ -339,6 +340,7 @@
 
 .house_img_wrap img{
   width: 100%;
+  border-radius: 30px;
 }
 
 .img_list_second{
@@ -417,6 +419,7 @@
 
 .sculpture_img_wrap img{
   width: 100%;
+  border-radius: 30px;
 }
 
 /* precast */
