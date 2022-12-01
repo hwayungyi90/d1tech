@@ -178,7 +178,7 @@
     border: none;
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    padding: 20px 0;
+    padding: 25px 0;
   }
   .materials_text:nth-child(1) {
     padding: 0;
@@ -188,5 +188,13 @@
   .materials_text:nth-child(3) {
     padding: 0;
     padding-top: 20px;
+  }
+
+  .desc_box {
+    padding: 30px;
+  }
+
+  .materials_text .desc_title span {
+    margin: 25px 0 20px;
   }
 }

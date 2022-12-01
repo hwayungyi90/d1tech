@@ -250,5 +250,9 @@ img {
     width: 100%;
   }
 
+  .type_flex {
+    gap: 25px;
+  }
+
 
 }
