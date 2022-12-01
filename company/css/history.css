@@ -39,6 +39,10 @@
   gap: 140px;
   margin-bottom: 150px;
 }
+.history_cont .cont_wrap .cont_img {
+  border-radius: 30px;
+  overflow: hidden;
+}
 .history_cont .cont_wrap > div {
   width: 50%;
 }
