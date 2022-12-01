@@ -14,6 +14,9 @@
 .business_img {
   border-radius: 30px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .business_img img {
@@ -160,7 +163,7 @@
   .business_img img {
     max-height: 410px;
   }
-  
+
 }
 
 /* mobile */
