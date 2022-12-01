@@ -325,5 +325,22 @@
       </section>
     </div>
     <script src="../assets/js/main.js"></script>
+
+    <script>
+      var menuBtn = document.querySelector(".mobile_btn");
+      var nav = document.querySelector("nav");
+      var lineOne = document.querySelector("nav .mobile_btn .line01");
+      var lineTwo = document.querySelector("nav .mobile_btn .line02");
+      var lineThree = document.querySelector("nav .mobile_btn .line03");
+      var link = document.querySelector("nav .nav_list");
+
+      menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        lineOne.classList.toggle("line-cross");
+        lineTwo.classList.toggle("line-fade-out");
+        lineThree.classList.toggle("line-cross");
+        link.classList.toggle("fade-in");
+      });
+    </script>
   </body>
 </html>

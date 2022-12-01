@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="wrapper">
-     <header class="header">
+      <header class="header">
         <div class="header_wrap">
           <div class="inner_container">
             <div class="header_flex">
@@ -197,78 +197,92 @@
           <div class="inner_container">
             <section>
               <div class="inner_title">
-                  <h3 class="section_title">
-                    Skill <span class="t_light">Introduction</span>
-                  </h3>
-                  <p class="desc">무한궤도형 로봇암</p>
+                <h3 class="section_title">
+                  Skill <span class="t_light">Introduction</span>
+                </h3>
+                <p class="desc">무한궤도형 로봇암</p>
+              </div>
+              <div class="skill_sub_cont">
+                <div class="type_img">
+                  <figure>
+                    <picture>
+                      <img
+                        src="/assets/images/skill_sub_img_3.png"
+                        alt="무한궤도형 로봇암"
+                      />
+                    </picture>
+                  </figure>
                 </div>
-                <div class="skill_sub_cont">
-                  <div class="type_img">
-                    <figure>
-                      <picture>
-                        <img src="/assets/images/skill_sub_img_3.png" alt="무한궤도형 로봇암">
-                      </picture>
-                    </figure>
-                  </div>
               </div>
               <div class="skill_type type_flex">
-                <div class="type_circle section_title">
-                  Type
-                </div>
+                <div class="type_circle section_title">Type</div>
                 <div class="type_title">
                   <p>무한궤도형 로봇암</p>
                 </div>
                 <div class="type_desc">
-                  <p class="type_subtitle">
-                    무한궤도형 로봇암 이동식 장비
-                  </p>
+                  <p class="type_subtitle">무한궤도형 로봇암 이동식 장비</p>
                   <ul>
                     <li>다관절 로봇개발</li>
                     <li>건축 시공시 별도의 장치 설치 불필요</li>
-                    <li>100평 이상의 중형규모의 건축을 구현시 ‘장비 이동성’ 용이</li>
-
+                    <li>
+                      100평 이상의 중형규모의 건축을 구현시 ‘장비 이동성’ 용이
+                    </li>
                   </ul>
                 </div>
-                
-
-
               </div>
             </section>
-        </div>
-      </div>
-
-      <footer class="footer">
-        <div class="inner_container">
-          <div class="footer_flex_box">
-            <div class="footer_left">
-              <div class="logo">
-                <figure>
-                  <picture>
-                    <img
-                      src="./assets/images/footer_logo.png"
-                      alt="footer_logo"
-                    />
-                  </picture>
-                </figure>
-              </div>
-              <div class="footer_address">
-                <p>제1공장: 경기도 김포시 통진읍 귀전로 56번길 174-50</p>
-              </div>
-            </div>
-            <div class="footer_right">
-              <p class="name">대표이사 <span>신동원</span></p>
-              <p class="number">사업자등록번호 : 173-81-02907</p>
-              <p class="tel">전화번호: 031-981-7051</p>
-              <p class="fax">팩스: 031-982-7081</p>
-              <p class="rights">
-                COPYRIGHT © 3D HOUSE CORP. ALL RIGHTS RESERVED
-              </p>
-            </div>
           </div>
         </div>
-      </footer>
+
+        <footer class="footer">
+          <div class="inner_container">
+            <div class="footer_flex_box">
+              <div class="footer_left">
+                <div class="logo">
+                  <figure>
+                    <picture>
+                      <img
+                        src="./assets/images/footer_logo.png"
+                        alt="footer_logo"
+                      />
+                    </picture>
+                  </figure>
+                </div>
+                <div class="footer_address">
+                  <p>제1공장: 경기도 김포시 통진읍 귀전로 56번길 174-50</p>
+                </div>
+              </div>
+              <div class="footer_right">
+                <p class="name">대표이사 <span>신동원</span></p>
+                <p class="number">사업자등록번호 : 173-81-02907</p>
+                <p class="tel">전화번호: 031-981-7051</p>
+                <p class="fax">팩스: 031-982-7081</p>
+                <p class="rights">
+                  COPYRIGHT © 3D HOUSE CORP. ALL RIGHTS RESERVED
+                </p>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
-  </div>
-  <script src="/assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+    <script>
+      var menuBtn = document.querySelector(".mobile_btn");
+      var nav = document.querySelector("nav");
+      var lineOne = document.querySelector("nav .mobile_btn .line01");
+      var lineTwo = document.querySelector("nav .mobile_btn .line02");
+      var lineThree = document.querySelector("nav .mobile_btn .line03");
+      var link = document.querySelector("nav .nav_list");
+
+      menuBtn.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        lineOne.classList.toggle("line-cross");
+        lineTwo.classList.toggle("line-fade-out");
+        lineThree.classList.toggle("line-cross");
+        link.classList.toggle("fade-in");
+      });
+    </script>
   </body>
 </html>
