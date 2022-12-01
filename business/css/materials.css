@@ -152,6 +152,15 @@
     width: 320px;
     height: 320px;
   }
+
+  .business_img { 
+    max-height: 400px;
+  }
+
+  .business_img img {
+    max-height: 410px;
+  }
+  
 }
 
 /* mobile */
@@ -196,5 +205,13 @@
 
   .materials_text .desc_title span {
     margin: 25px 0 20px;
+  }
+
+  .business_img { 
+    max-height: 300px;
+  }
+
+  .business_img img {
+    max-height: 310px;
   }
 }
