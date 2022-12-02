@@ -41,7 +41,7 @@
 .desc_box {
   width: 100%;
   max-width: 1395px;
-  padding: 60px;
+  padding: 60px 0;
   border-radius: 30px;
   display: flex;
   margin: 0 auto;
@@ -55,14 +55,6 @@
   padding: 70px;
   color: #fff;
   text-align: center;
-}
-
-.materials_text:nth-child(1) {
-  padding-left: 0;
-}
-
-.materials_text:nth-child(3) {
-  padding-right: 0;
 }
 
 .materials_text:nth-child(2) {

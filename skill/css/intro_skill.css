@@ -1,5 +1,9 @@
 /* skill */
 
+.list_img img {
+  width: 100%;
+}
+
 .type_img picture{
   width: fit-content;
   border-radius: 30px;
