@@ -76,6 +76,10 @@ img{border: 0; vertical-align: top;}
   width: 60%;
 } 
 
+.btn_box {
+  margin-top: 40px;
+}
+
 @media screen and (min-width: 1025px) and (max-width: 1500px){
   .con_text_box {
     padding: 100px 80px;
@@ -111,7 +115,6 @@ img{border: 0; vertical-align: top;}
   .btn_box {
   margin-top: 40px;
   padding: 8px 20px;
-  padding-right: 40px;
   font-size: 18px;
   }
 }
@@ -145,27 +148,18 @@ img{border: 0; vertical-align: top;}
   }
 
   .contact_list li:nth-child(1) .con_text_box{
-    position: relative;
     width: 100%;
     background:linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(255, 255,255, 0)), url(../../assets/images/contact1.png);
-    z-index: 10;
-
   }
 
   .contact_list li:nth-child(2) .con_text_box{
-    position: relative;
     width: 100%;
     background:linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(255, 255,255, 0)), url(../../assets/images/contact2.png);
-    z-index: 10;
-
   }
 
   .contact_list li:nth-child(3) .con_text_box{
-    position: relative;
     width: 100%;
     background:linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(255, 255,255, 0)), url(../../assets/images/contact3.png);
-    z-index: 10;
-
   }
 
   .con_banner{
@@ -187,7 +181,6 @@ img{border: 0; vertical-align: top;}
 
   .btn_box {
   padding: 6px 15px;
-  padding-right: 40px;
   font-size: 16px;
   }
 
