@@ -18,7 +18,6 @@ window.onload = function () {
   })
 
   var moList = document.querySelectorAll(".link");
-  console.log(moList);
 
   for (let i = 0; i < moList.length; i++) {
     moList[i].addEventListener("click", function () {
@@ -27,11 +26,13 @@ window.onload = function () {
   }
 
   //ceo 아코디언
-  let anchor = document.querySelectorAll('.list_title');
+  let anchor = document.querySelectorAll('.record_list .list_title');
 
   for (let i = 0; i < anchor.length; i++) {
     anchor[i].addEventListener("click", function () {
       this.classList.toggle('on');
+      console.log()
     })
   }
+
 }
