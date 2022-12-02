@@ -64,6 +64,7 @@
   .manage_list {
     flex-direction: column;
     gap: 25px;
+    align-items: center;
   }
   .manage_list .desc {
     margin: 15px auto 0;
