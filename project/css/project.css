@@ -350,7 +350,7 @@
 
 .img_list_second img{
   width: 100%;
-
+  border-radius: 30px;
 }
 
 .img_txt{
@@ -425,8 +425,8 @@
 /* precast */
 
 .precast_img_wrap img{
-  border-radius: 30px;
   width: 100%;
+  border-radius: 30px;
 }
 
 .precast_img_list li{
@@ -443,6 +443,7 @@
 .precast_img_list img {
   width: 100%;
   height: 100%;
+  border-radius: 30px;
 }
 
 .precast_img_list_second{
@@ -452,6 +453,11 @@
 
 .precast_img_list_fore{
   margin-top: 80px;
+}
+
+.precast_img_list_fore img{
+  border-radius: 30px;
+  width: 100%;
 }
 
 @media screen and (max-width: 1024px){
