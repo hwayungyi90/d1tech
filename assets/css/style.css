@@ -13,11 +13,15 @@
   position: absolute;
   top: 6.0417vw;
   left: 9.8958vw;
-  max-width: 590px;
+  max-width: 610px;
 }
 
 .main_section .main_text_box .main_title {
   margin-bottom: 26px;
+}
+
+.main_section .main_text_box .main_title span {
+  font-weight: 300;
 }
 
 /* business section */
@@ -456,7 +460,7 @@
   .main_section .main_text_box {
     top: 20px;
     left: 20px;
-    max-width: unset;
+    width: 90%;
   }
 
   .main_section .main_text_box .main_title {
