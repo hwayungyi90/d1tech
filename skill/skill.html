@@ -459,11 +459,18 @@
       function toggleAccordion(el) {
         var target = el.currentTarget;
 
-        accordionBtn.forEach(function (el) {
-          el.classList.remove('on');
-        })
-        
-        target.classList.add('on');
+        if(!target.classList.contains('on')) {
+          console.log('확인')
+          accordionBtn.forEach(function (el) {
+            el.classList.remove('on');
+          })
+          
+          target.classList.add('on');
+        } else {
+          accordionBtn.forEach(function (el) {
+            target.classList.remove('on');
+          })
+        }
 
       }
       
