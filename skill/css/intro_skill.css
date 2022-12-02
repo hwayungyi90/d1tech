@@ -1,7 +1,6 @@
 /* skill */
-
 .skill_img {
-  width: 50%;
+  width: calc(50% - 30px);
 }
 
 .skill_img img {
@@ -9,11 +8,60 @@
   border-radius: 30px;
 }
 
+.skill_cont .list_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid #000;
+}
+
+.skill_table li:first-child .list_title  {
+  padding-top: 0;
+}
+
+.skill_cont .list_title.on {
+  border-bottom: none
+}
+
+.skill_cont .record_list {
+  position: relative;
+}
+.skill_cont .list_depth2 {
+  border-bottom: 1px solid transparent;
+  letter-spacing: -1px;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s;
+  color: #666;
+}
+.skill_cont .list_title.on + .list_depth2 {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  max-height: 300px;
+  border-color: #000;
+}
+.skill_cont .list_title i {
+  transition: all 0.3s;
+  font-size: 26px;
+}
+.skill_cont .list_title.on i {
+  transform: rotate(90deg);
+}
+.skill_cont .list_depth2 li {
+  margin: 10px 0;
+}
+
+.skill_table .text_box {
+  width: fit-content;
+}
+
 .list_img img {
   width: 100%;
 }
 
 .type_img picture{
+  width: fit-content;
   border-radius: 30px;
   overflow: hidden;
   display: flex;
@@ -31,6 +79,13 @@
 
 .inner_title .desc {
   margin-top: 10px;
+}
+
+.skill_cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 60px;
 }
 
 .skill_list {
@@ -53,6 +108,7 @@
 .skill_title {
   font-size: 20px;
   font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .skill_desc {
@@ -75,7 +131,8 @@
 .skill_table > .skill_cont {
   padding: 30px 0;
   border-bottom: 1px solid #000;
-  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .skill_cont .skill_table p{
@@ -83,7 +140,7 @@
 }
 
 .skill_table {
-  width: fit-content;
+  width: calc(50% - 30px);
   max-width: 972px;
 }
 
@@ -146,6 +203,14 @@
 
 /* tablet */
 @media screen and (max-width: 1024px) {
+  .skill_img {
+    width: 100%;
+  }
+
+  .skill_table {
+    width: 100%;
+  }
+
   .skill_list {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -187,8 +252,24 @@
 
 /* mobile */
 @media screen and (max-width: 767px) {
+  .skill_img {
+    width: 100%;
+  }
+
+  .font_gray {
+    font-size: 16px;
+  }
+
+  .skill_cont .list_title {
+    padding: 20px 0;
+  }
+
+  .skill_cont .list_title.on + .list_depth2 {
+    padding-bottom: 10px;
+  }
+
   .skill_table {
-    margin-top: 80px;
+    width: 100%;
   }
 
   .skill_flex .txt_box {
