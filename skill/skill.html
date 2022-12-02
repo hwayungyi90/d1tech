@@ -448,19 +448,23 @@
         link.classList.toggle("fade-in");
       });
 
-      let skillAcor = document.querySelectorAll('.skill_table .list_title');
-      let acorOn = document.querySelector(".on");
 
-      for (let i = 0; i < skillAcor.length; i++) {
-        skillAcor[i].addEventListener('click', function () {
-          if(acorOn.length === 0) {
-            this.classList.toggle('on')
-          } else {
-            acorOn.classList.remove('on')
-            this.classList.toggle('on')
+      // skill accordian
+      var accordionBtn = document.querySelectorAll('.skill_table .list_title');
+      
+      accordionBtn.forEach(function (el) {
+          el.addEventListener('click', toggleAccordion)
+      });
 
-          }
+      function toggleAccordion(el) {
+        var target = el.currentTarget;
+
+        accordionBtn.forEach(function (el) {
+          el.classList.remove('on');
         })
+        
+        target.classList.add('on');
+
       }
       
     </script>
