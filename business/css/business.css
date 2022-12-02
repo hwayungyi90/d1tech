@@ -84,6 +84,7 @@
   font-family: "Play", sans-serif;
   font-weight: 700;
   margin: 60px 0 25px;
+  font-size: 40px;
 }
 
 .business_page .business_img_flex {
@@ -94,7 +95,7 @@
   padding-right: 24px;
   line-height: 35px;
   color: #000;
-  border-bottom: 2px solid #000;
+  border-bottom: 1px solid #000;
   display: inline-block;
   position: relative;
 }
@@ -151,6 +152,7 @@
     .box_wrap
     .txt_box
     .sub_title {
+    font-size: 28px;
     margin: 26px 0 10px;
   }
 }
@@ -191,6 +193,7 @@
     .box_wrap
     .txt_box
     .sub_title {
+    font-size: 28px;
     margin: 26px 0 10px;
   }
 }
