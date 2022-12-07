@@ -2,63 +2,95 @@
   background-image: url(../../assets/images/introduction_main.png);
   background-size: cover;
 }
+
 .sub_visual .main_text {
   text-align: center;
   color: #fff;
 }
+
 .inner_title {
-  margin-top: 100px;
   text-align: center;
 }
+
 .section_title .t_light {
   font-weight: 300;
 }
+
 .inner_container .cont {
   margin: 100px auto;
 }
+
 .location .locate_cont {
   margin-top: 100px;
   border-radius: 30px;
 }
+
 .location .locate_cont .locate_map {
   width: 100%;
+  height: 600px;
 }
+
 .location .locate_cont .locate_map iframe {
   width: 100%;
 }
+
 .locate_cont .locate_address {
   margin-top: 50px;
   padding-left: 30px;
 }
+
 .locate_cont .locate_address .address_title {
   margin-bottom: 30px;
   font-size: 36px;
 }
+
 .locate_cont .locate_address p {
   margin-bottom: 10px;
 }
+
 @media screen and (max-width: 1024px) {
   .inner_container .cont {
     margin: 80px auto;
   }
+
   .locate_cont .locate_address {
     margin-top: 30px;
   }
+
   .locate_cont .locate_address .address_title {
     margin-bottom: 12px;
     font-size: 26px;
   }
+
   .locate_cont .locate_address p {
     margin-bottom: 5px;
     font-size: 18px;
   }
+
+  .location .locate_cont .locate_map {
+    height: 480px;
+  }
 }
+
 @media screen and (max-width: 767px) {
   .inner_container .cont {
-    margin: 60px auto;
+    margin: 60px auto 100px;
   }
+
   .locate_cont .locate_address {
+    margin-top: 24px;
     padding-left: 10px;
-    margin-top: 20px;
+  }
+
+  .location .locate_cont .locate_map {
+    height: 360px;
+  }
+
+  .locate_cont .locate_address .address_title {
+    font-size: 24px;
+  }
+
+  .locate_cont .locate_address p {
+    font-size: 14px;
   }
 }

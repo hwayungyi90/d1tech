@@ -14,7 +14,7 @@
   margin-bottom: 20px;
 }
 
-.printer_page .printer_main .main_text .sub_title + p {
+.printer_page .printer_main .main_text .sub_title+p {
   font-size: 20px;
   font-weight: 400;
 }
@@ -29,6 +29,12 @@
 
 .printer_page .printer_cont .printer_desc {
   margin-bottom: 80px;
+}
+
+.printer_page .printer_cont .printer_desc .desc {
+  text-align: left;
+  line-height: 1.4;
+  padding: 0 24px;
 }
 
 .printer_page .printer_cont .printer_desc .desc_title {
@@ -98,7 +104,7 @@
     margin-bottom: 16px;
   }
 
-  .printer_page .printer_main .main_text .sub_title + p {
+  .printer_page .printer_main .main_text .sub_title+p {
     font-size: 18px;
   }
 
@@ -137,7 +143,7 @@
     margin-bottom: 10px;
   }
 
-  .printer_page .printer_main .main_text .sub_title + p {
+  .printer_page .printer_main .main_text .sub_title+p {
     font-size: 16px;
   }
 
@@ -148,6 +154,18 @@
   .printer_page .printer_cont .printer_desc .desc_title {
     font-size: 22px;
     margin-bottom: 16px;
+  }
+
+  .printer_page .printer_cont .printer_desc .desc br {
+    display: none !important;
+  }
+
+  .printer_page .printer_cont .printer_desc picture {
+    height: 200px;
+  }
+
+  .printer_page .printer_cont .printer_desc figure img {
+    border-radius: 10px;
   }
 
   .printer_page .printer_cont .printer_desc figure {

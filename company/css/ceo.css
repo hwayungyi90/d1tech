@@ -2,70 +2,88 @@
   background-image: url(../../assets/images/introduction_main.png);
   background-size: cover;
 }
+
 .sub_visual .main_text {
   text-align: center;
   color: #fff;
 }
+
 .inner_title {
   margin-top: 100px;
   text-align: center;
 }
+
 .section_title .t_light {
   font-weight: 300;
 }
+
 .inner_container .cont {
   margin: 100px auto;
 }
+
 .ceo_cont {
   max-width: 1396px;
   margin: 0 auto;
 }
+
 .ceo_cont .ceo_intro {
   display: flex;
   gap: 50px;
   justify-content: space-between;
 }
-.ceo_cont .ceo_intro > div {
+
+.ceo_cont .ceo_intro>div {
   width: calc(50% - 25px);
 }
+
 .ceo_cont .ceo_intro .ceo_pic {
   max-width: 100%;
   border-radius: 30px;
   overflow: hidden;
 }
+
 .ceo_cont .ceo_intro img {
   width: 100%;
 }
+
 .ceo_career {
   display: flex;
   align-items: center;
 }
+
 .career_wrap {
   width: 100%;
 }
+
 .ceo_career .career_wrap .career_title {
   margin-bottom: 40px;
   font-size: 36px;
 }
+
 .ceo-career .career_wrap dl {
   word-break: keep-all;
 }
+
 .ceo_career .career_wrap dt {
   margin-bottom: 30px;
   font-size: 30px;
   font-weight: 400;
 }
+
 .ceo_career .career_wrap dd {
   margin-bottom: 20px;
 }
+
 .ceo_record {
   margin-top: 100px;
 }
+
 .ceo_record .record_title {
   margin-bottom: 60px;
   text-align: center;
   font-size: 36px;
 }
+
 .ceo_record .list_title {
   display: flex;
   padding: 30px;
@@ -75,9 +93,11 @@
   font-weight: 700;
   border-bottom: 1px solid #000;
 }
+
 .ceo_record .record_list {
   position: relative;
 }
+
 .ceo_record .list_depth2 {
   padding: 0 30px;
   border-bottom: 1px solid transparent;
@@ -86,33 +106,39 @@
   overflow: hidden;
   transition: all 0.5s;
 }
-.ceo_record .list_title.on + .list_depth2 {
+
+.ceo_record .list_title.on+.list_depth2 {
   padding-top: 20px;
   padding-bottom: 20px;
   max-height: 300px;
   border-color: #000;
 }
+
 .ceo_record .list_title i {
   transition: all 0.3s;
 }
+
 .ceo_record .list_title.on i {
   transform: rotate(90deg);
 }
+
 .ceo_record .list_depth2 li {
   margin: 10px 0;
 }
+
 .ceo_record .list_depth2 .font_gray {
   font-size: 16px;
   color: #666666;
 }
+
 .ceo_banner {
   margin-bottom: 100px;
   padding: 273px 190px;
-  background: url(../../assets/images/introduction_ceo_bottom_img.png) no-repeat
-    center;
+  background: url(../../assets/images/introduction_ceo_bottom_img.png) no-repeat center;
   background-size: cover;
   border-radius: 30px;
 }
+
 .ceo_banner .banner_text {
   text-align: center;
   font-size: 36px;
@@ -120,26 +146,33 @@
   color: #fff;
   word-break: break-all;
 }
+
 .ceo_banner .banner_text .text_b {
   font-weight: 700;
 }
+
 @media screen and (max-width: 1024px) {
   .inner_container .cont {
     margin: 80px auto;
   }
+
   .inner_container .intro_cont {
     margin-top: 80px;
   }
+
   .inner_title {
     margin-top: 80px;
   }
+
   .inner_container .intro_cont {
     margin-top: 80px;
   }
+
   .ceo_career .career_wrap .career_title {
     margin-bottom: 30px;
     font-size: 26px;
   }
+
   /* .ceo_career .career_wrap dl {
     letter-spacing: -1px;
   } */
@@ -147,110 +180,141 @@
     margin-bottom: 20px;
     font-size: 20px;
   }
+
   .ceo_career .career_wrap dd {
     margin-bottom: 10px;
     font-size: 16px;
   }
+
   .ceo_cont .ceo_intro {
     gap: 30px;
   }
-  .ceo_cont .ceo_intro > div {
+
+  .ceo_cont .ceo_intro>div {
     width: 50%;
   }
+
   .ceo_record {
     margin-top: 80px;
   }
+
   .ceo_record .record_title,
   .ceo_record .list_title {
     font-size: 26px;
   }
+
   .ceo_record .record_title {
     margin-bottom: 40px;
   }
+
   .ceo_record .list_title {
     padding: 20px;
   }
+
   .ceo_record .list_depth2 li {
     word-break: keep-all;
     font-size: 18px;
   }
-  .ceo_record .list_title.on + .list_depth2 {
+
+  .ceo_record .list_title.on+.list_depth2 {
     max-height: 320px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
+
   .ceo_banner {
     margin-bottom: 80px;
     padding: 100px 50px;
   }
+
   .ceo_banner .banner_text {
     font-size: 26px;
     letter-spacing: 0;
     word-break: keep-all;
   }
 }
+
 @media screen and (max-width: 767px) {
   .inner_container .cont {
     margin: 60px auto;
   }
+
   .inner_container .intro_cont {
     margin-top: 60px;
   }
+
   .inner_title {
     margin-top: 60px;
   }
+
   .inner_container .intro_cont {
     margin-top: 60px;
   }
+
   .ceo_cont .ceo_intro {
     flex-direction: column;
     gap: 30px;
   }
-  .ceo_cont .ceo_intro > div {
+
+  .ceo_cont .ceo_intro>div {
     width: 100%;
   }
+
   .ceo_career .career_wrap .career_title {
     text-align: center;
     margin-bottom: 20px;
     font-size: 20px;
   }
+
   .ceo_career .career_wrap dl {
     letter-spacing: -0.5px;
   }
+
   .ceo_career .career_wrap dt {
     margin-bottom: 15px;
     font-size: 18px;
   }
+
   .ceo_career .career_wrap dd {
     margin-bottom: 5px;
   }
+
   .ceo_record {
     margin-top: 60px;
   }
+
   .ceo_record .record_title,
   .ceo_record .list_title {
     font-size: 20px;
   }
+
   .ceo_record .record_title {
     margin-bottom: 20px;
   }
+
   .ceo_record .list_title {
     padding: 12px;
   }
+
   .ceo_record .list_depth2 {
     padding: 0 12px;
   }
+
   .ceo_record .list_depth2 li {
     font-size: 16px;
   }
+
   .ceo_banner {
     margin-bottom: 60px;
     padding: 70px 20px;
   }
+
   .ceo_banner .banner_text {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.4;
   }
 }
+
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .ceo_career .career_wrap dl {
     text-align: center;
