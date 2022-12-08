@@ -1,9 +1,9 @@
-.sub_visual {
+.management .sub_visual {
   background-image: url(../../assets/images/introduction_main.png);
   background-size: cover;
 }
 
-.sub_visual .main_text {
+.management .sub_visual .main_text {
   text-align: center;
   color: #fff;
 }
@@ -84,7 +84,8 @@
     margin-top: 60px;
   }
 
-  .manage_list {}
+  .manage_list {
+  }
 
   .manage_list .desc {
     margin: 15px auto 0;

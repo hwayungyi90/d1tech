@@ -1,11 +1,11 @@
-.sub_visual {
+.introduction .sub_visual {
   position: relative;
   width: 100%;
   background-image: url(../../assets/images/introduction_main.png);
   background-size: cover;
 }
 
-.sub_visual .main_text {
+.introduction .sub_visual .main_text {
   text-align: center;
   color: #fff;
 }
@@ -65,7 +65,7 @@
 }
 
 .intro_btn_list .intro_btn {
-  max-width: calc(50% - 20px);
+  max-width: calc(50% - 10px);
   width: 100%;
   background: #f7f7f7;
   border: 1px solid transparent;

@@ -1,9 +1,9 @@
-.sub_visual {
+.location .sub_visual {
   background-image: url(../../assets/images/introduction_main.png);
   background-size: cover;
 }
 
-.sub_visual .main_text {
+.location .sub_visual .main_text {
   text-align: center;
   color: #fff;
 }
