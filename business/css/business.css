@@ -1,5 +1,5 @@
 .sub_visual {
-  background: url(../../assets/images/business_visual.png);
+  background-image: url(../../assets/images/business_visual.png);
 }
 
 .business_page .business_main {
@@ -29,7 +29,7 @@
   margin-bottom: 20px;
 }
 
-.business_page .business_main .main_text .sub_title+p {
+.business_page .business_main .main_text .sub_title + p {
   font-size: 20px;
   font-weight: 400;
 }
@@ -126,7 +126,7 @@
     margin-bottom: 16px;
   }
 
-  .business_page .business_main .main_text .sub_title+p {
+  .business_page .business_main .main_text .sub_title + p {
     font-size: 18px;
   }
 
@@ -167,7 +167,7 @@
     margin-bottom: 10px;
   }
 
-  .business_page .business_main .main_text .sub_title+p {
+  .business_page .business_main .main_text .sub_title + p {
     font-size: 16px;
   }
 

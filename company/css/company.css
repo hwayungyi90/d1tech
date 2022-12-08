@@ -73,7 +73,7 @@
 
 .intro_btn_list .intro_btn .btn {
   display: block;
-  padding: 30px;
+  padding: 90px 50px 30px 50px;
 }
 
 .intro_btn_list .btn_text {
@@ -129,8 +129,9 @@
     margin-top: 80px;
   }
 
-  .intro_btn_list .intro_btn {}
-
+  .intro_btn_list .intro_btn .btn {
+    padding: 60px 30px 30px 30px;
+  }
   .intro_btn .btn_title {
     font-size: 30px;
   }
@@ -173,11 +174,12 @@
   }
 
   .intro_btn_list .intro_btn .btn {
-    padding: 20px;
+    padding: 30px;
   }
 
   .intro_btn .more_btn {
     margin-top: 20px;
+    line-height: 20px;
   }
 
   .intro_btn .btn_title {
@@ -187,7 +189,6 @@
   .intro_btn .btn_desc {
     font-size: 16px;
   }
-
 }
 
 @media (max-width: 320px) {
