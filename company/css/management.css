@@ -57,14 +57,13 @@
   }
 
   .manage_list {
-    gap: 0;
+    gap: 40px;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .manage_list li {
-    max-width: none;
-    width: 50%;
+    max-width: 320px;
     padding: 24px;
     box-sizing: border-box;
   }
@@ -85,6 +84,7 @@
   }
 
   .manage_list {
+    gap: 20px;
   }
 
   .manage_list .desc {

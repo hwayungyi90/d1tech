@@ -1,10 +1,5 @@
 /* main */
 
-.wrapper {
-  width: 100%;
-  overflow: hidden;
-}
-
 .sub_visual {
   background-image: url(/assets/images/pro_main.png);
 }
@@ -222,6 +217,40 @@
   .inner_title img {
     max-width: 70px;
     width: 100%;
+  }
+
+  .pro_list li{
+    position: relative;
+  }
+
+  .pro_list li::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+  }
+
+  .pro_list figure .gallery-img {
+    background: rgba(0, 0, 0, 1);
+  }
+
+
+  .pro_list figure .gallery-img {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .pro_list figure img {
+    opacity: 0.9;
+  }
+
+  .pro_list figure figcaption {
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
   }
 
   .pro_list figure figcaption {

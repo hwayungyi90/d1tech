@@ -7,6 +7,11 @@
   width: 100%;
 }
 
+.business_page .business_video{
+  width: 100%;
+  border-radius: 30px;
+}
+
 .business_page .business_main .main_txt_position {
   position: absolute;
   top: 50%;

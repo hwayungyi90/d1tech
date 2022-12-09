@@ -1,8 +1,9 @@
 .introduction .sub_visual {
   position: relative;
   width: 100%;
-  background-image: url(../../assets/images/introduction_main.png);
+  background-image: url(../../assets/images/3printer_visu.png);
   background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .introduction .sub_visual .main_text {

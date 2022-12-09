@@ -1178,8 +1178,8 @@ input[type=datetime-local]:focus,
 input[type=color]:focus,
 .site textarea:focus {
 	color: var(--form--color-text);
-	outline-offset: 2px;
-	outline: 2px dotted var(--form--border-color);
+/* 	outline-offset: 2px;
+	outline: 2px dotted var(--form--border-color); */
 }
 
 input[type=text]:disabled,
@@ -1219,11 +1219,11 @@ input[type=color]:disabled,
 }
 
 input[type=search]:focus {
-	outline-offset: -7px;
+/* 	outline-offset: -7px; */
 }
 
 .is-dark-theme input[type=search]:focus {
-	outline-color: var(--global--color-background);
+/* 	outline-color: var(--global--color-background); */
 }
 
 input[type=color] {
@@ -1251,8 +1251,8 @@ select {
 }
 
 select:focus {
-	outline-offset: 2px;
-	outline: 2px dotted var(--form--border-color);
+/* 	outline-offset: 2px;
+	outline: 2px dotted var(--form--border-color); */
 }
 
 .is-dark-theme select {
@@ -1299,8 +1299,8 @@ License: MIT.
 	}
 
 	input[type=checkbox]:focus {
-		outline-offset: 2px;
-		outline: 2px dotted var(--form--border-color);
+/* 		outline-offset: 2px;
+		outline: 2px dotted var(--form--border-color); */
 	}
 
 	input[type=checkbox]:after {
@@ -1331,8 +1331,8 @@ License: MIT.
 	}
 
 	input[type=radio]:focus {
-		outline-offset: 2px;
-		outline: 2px dotted var(--form--border-color);
+/* 		outline-offset: 2px;
+		outline: 2px dotted var(--form--border-color); */
 	}
 
 	input[type=radio]:after {
@@ -1357,8 +1357,8 @@ License: MIT.
 	}
 
 	input[type=radio]:checked:focus {
-		outline-offset: 4px;
-		outline: 2px dotted var(--form--border-color);
+/* 		outline-offset: 4px;
+		outline: 2px dotted var(--form--border-color); */
 	}
 }
 
@@ -1593,10 +1593,10 @@ a:hover {
 .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
 
 	/* Only visible in Windows High Contrast mode */
-	outline: 2px solid transparent;
+/* 	outline: 2px solid transparent;
 	text-decoration: underline 1px dotted currentColor;
 	text-decoration-skip-ink: none;
-	background: rgba(255, 255, 255, 0.9);
+	background: rgba(255, 255, 255, 0.9); */
 }
 
 .is-dark-theme .site a:focus:not(.wp-block-button__link):not(.wp-block-file__button) {
@@ -7387,7 +7387,7 @@ picture {
 
   .swiper-button-next,
   .swiper-button-prev {
-    display: none;
+    display: none !important;
   }
 
   .project_section .project_flex .project_left {
@@ -7712,12 +7712,17 @@ picture {
 
 /* 비지니스*/
 .business_page .sub_visual {
-  background-image: url(/wp-content/uploads/2022/12/business_visual.png);
+  background-image: url(/wp-content/uploads/2022/12/business_visual-1.png);
 }
 
 .business_page .business_main {
   position: relative;
   width: 100%;
+}
+
+.business_page .business_video{
+  width: 100%;
+  border-radius: 30px;
 }
 
 .business_page .business_main .main_txt_position {
@@ -7922,7 +7927,7 @@ picture {
 
 /* materials */
 .business_wrap .sub_visual {
-  background-image: url(/wp-content/uploads/2022/12/business_visual.png);
+  background-image: url(/wp-content/uploads/2022/12/business_visual-1.png);
 }
 
 
@@ -7966,7 +7971,7 @@ picture {
   margin: 0 auto;
   overflow: hidden;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../../assets/images/business_materials2.png");
+    url("/wp-content/uploads/2022/12/business_materials2.png");
   background-size: cover;
 }
 
@@ -8171,7 +8176,7 @@ picture {
 }
 
 .printer_page .printer_main .sub_visual {
-  background-image: url("/wp-content/uploads/2022/12/business_visual.png");
+  background-image: url("/wp-content/uploads/2022/12/business_visual-1.png");
 }
 
 .printer_page .printer_main .main_text .sub_title {
@@ -8355,7 +8360,7 @@ picture {
 
 /* ceo */
 .ceo .sub_visual {
-  background-image: url(/wp-content/uploads/2022/12/introduction_main.png);
+  background-image: url(/wp-content/uploads/2022/12/3printer_visu-1.png);
   background-size: cover;
 }
 
@@ -8683,7 +8688,7 @@ picture {
 .intro_wrap .sub_visual {
   position: relative;
   width: 100%;
-  background-image: url(/wp-content/uploads/2022/12/introduction_main.png);
+  background-image: url(/wp-content/uploads/2022/12/3printer_visu-1.png);
   background-size: cover;
 }
 
@@ -8881,7 +8886,7 @@ picture {
 /* 히스토리 */
 
 .history_wrap .sub_visual {
-  background-image: url(/wp-content/uploads/2022/12/introduction_main.png);
+  background-image: url(/wp-content/uploads/2022/12/3printer_visu-1.png);
   background-size: cover;
 }
 .sub_visual .main_text {
@@ -9028,7 +9033,7 @@ picture {
 
 /* 로케이션 */
 .location_wrap .sub_visual {
-  background-image: url(/wp-content/uploads/2022/12/introduction_main.png);
+  background-image: url(/wp-content/uploads/2022/12/3printer_visu-1.png);
   background-size: cover;
 }
 
@@ -9127,7 +9132,7 @@ picture {
 
 /* 매니지먼트 */
 .manage_wrap .sub_visual {
-  background-image: url(/wp-content/uploads/2022/12/introduction_main.png);
+  background-image: url(/wp-content/uploads/2022/12/3printer_visu-1.png);
   background-size: cover;
 }
 
@@ -9185,14 +9190,13 @@ picture {
   }
 
   .manage_list {
-    gap: 0;
+    gap: 40px;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .manage_list li {
-    max-width: none;
-    width: 50%;
+    max-width: 320px;
     padding: 24px;
     box-sizing: border-box;
   }
@@ -9212,7 +9216,9 @@ picture {
     margin-top: 60px;
   }
 
-  .manage_list {}
+  .manage_list {
+    gap: 20px;
+  }
 
   .manage_list .desc {
     margin: 15px auto 0;
@@ -9448,7 +9454,7 @@ img {
 
 
 .project_wrap .sub_visual {
-  background-image: url(/wp-content/uploads/2022/12/pro_main.png);
+  background-image: url(/wp-content/uploads/2022/12/pro_main-1.png);
 }
 
 .pro_under {
@@ -10087,7 +10093,7 @@ g
 }
 
 .skill .sub_visual {
-  background-image: url(/wp-content/uploads/2022/12/skill_main.png);
+  background-image: url(/wp-content/uploads/2022/12/skill_main-1.png);
 }
 
 .inner_title .desc {
@@ -10356,3 +10362,139 @@ g
     margin: 60px auto 0;
   }
 }
+
+/* 문의하기 플러그인 */
+/* 플러그인 */
+
+input[id="popup"]{
+	display:none;
+}
+
+input[id="popup"] + label{
+	display:inline-block;
+}
+
+input[id="popup"] + label + div{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:100;
+}
+
+input[id="popup"] + label + div > div{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+	width:85%;
+	height:60%;
+	background:#fff;
+	z-index:2;
+	max-width: 1000px;
+}
+
+input[id="popup"] + label + div > div > label{
+	position: absolute;
+	top: 0;
+	right: -32px;
+	width: 32px;
+	height: 32px;
+	background: #000;
+	z-index:1;
+	cursor: pointer;
+	color: #fff;
+}
+
+input[id="popup"] + label + div > div > label::before{
+	content: "\00d7";
+	font-size: 24px;
+	position: absolute;
+	top: -2px;
+	left: 4px;
+}
+
+input[id="popup"] + label + div > label{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:rgba(0, 0, 0, 0.75);
+	z-index:1;
+}
+
+input[id="popup"] + label + div{
+	opacity:0;visibility:hidden;transition: all 0.5s;
+}
+
+input[id="popup"]:checked + label + div{
+	opacity:1;visibility:visible;
+}
+
+.tit{
+	padding: 40px 30px 0px;
+	color: #000;
+	font-size: 34px;
+}
+
+.content{
+	width: 95%;
+	height: 72%;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+	padding: 30px 30px;
+	overflow: hidden;
+	overflow-y: auto;
+	color: #666;
+	margin-top: 27px;
+	font-size: 16px;
+	line-height: 25px;
+}
+
+@media screen and (max-width: 1203px){
+	
+	.tit{
+	font-size: 30px;
+}
+	
+	.content{
+	margin-top: 27px;
+	font-size:14px
+	line-height: 20px;	
+}
+}
+
+@media screen and (max-width: 767px){
+	
+	input[id="popup"] + label + div > div > label{
+	position: absolute;
+	top: -30px;
+	right: 0px;
+	width: 30px;
+	height: 30px;
+}
+
+input[id="popup"] + label + div > div > label::before{
+	content: "\00d7";
+	font-size: 24px;
+	position: absolute;
+	top: -2px;
+	left: 4px;
+}
+
+	.tit{
+	font-size: 20px;
+	padding: 20px 10px 0px;
+}
+	
+	.content{
+	margin-top: 20px;
+	font-size:13px;
+	line-height: 18px;	
+	padding: 10px 10px;
+}
+	
+}
+/* 문의하기 플러그인 끝 * /
