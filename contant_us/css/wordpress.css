@@ -9405,17 +9405,17 @@ img {
 
   .contact_list li:nth-child(1) .con_text_box {
     width: 100%;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(../../assets/images/contact1.png);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/wp-content/uploads/2022/12/contact1.png);
   }
 
   .contact_list li:nth-child(2) .con_text_box {
     width: 100%;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(../../assets/images/contact2.png);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/wp-content/uploads/2022/12/contact2.png);
   }
 
   .contact_list li:nth-child(3) .con_text_box {
     width: 100%;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(../../assets/images/contact3.png);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0)), url(/wp-content/uploads/2022/12/contact3.png);
   }
 
   .con_banner {
@@ -9674,6 +9674,40 @@ img {
     width: 100%;
   }
 
+  .pro_list li{
+    position: relative;
+  }
+
+  .pro_list li::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+  }
+
+  .pro_list figure .gallery-img {
+    background: rgba(0, 0, 0, 1);
+  }
+
+
+  .pro_list figure .gallery-img {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .pro_list figure img {
+    opacity: 0.9;
+  }
+
+  .pro_list figure figcaption {
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+  }
+
   .pro_list figure figcaption {
     bottom: 30px;
     left: 25px;
@@ -9726,6 +9760,7 @@ img {
     font-size: 18px;
   }
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 950px) {
   .bg_tit {
@@ -10498,3 +10533,12 @@ input[id="popup"] + label + div > div > label::before{
 	
 }
 /* 문의하기 플러그인 끝 * /
+ 
+
+/*  */
+
+
+figcaption{
+margin-bottom: 0;
+}
+
