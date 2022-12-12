@@ -223,7 +223,7 @@
     position: relative;
   }
 
-  .pro_list li::after{
+  .pro_list li a:after {
     position: absolute;
     content: "";
     top: 0;
