@@ -386,6 +386,10 @@ a {
     right: 20px;
     transform: translateY(-50%);
   }
+  
+  .mobile_nav ul li:nth-child(4) .link:after {
+    display: none;
+  }
 
   .mobile_nav .nav_list .link.active:after {
     background: url(../images/minus_btn.png);
