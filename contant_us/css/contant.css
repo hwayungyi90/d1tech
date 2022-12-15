@@ -79,8 +79,23 @@ img {
   width: 60%;
 }
 
-.btn_box {
+.contact_wrap .btn_box {
   margin-top: 40px;
+  border: 1px solid #fff;
+  line-height: 1.2;
+}
+
+.contact_wrap .con_text_box .main_title {
+  font-size: 28px;
+}
+
+.contact_wrap .con_text_box .title_under {
+  font-size: 18px;
+}
+
+.pro_text_box .btn_box a{
+	font-size:16px;
+	padding: 7px 16px;
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1500px) {

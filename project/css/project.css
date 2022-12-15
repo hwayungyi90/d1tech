@@ -388,6 +388,17 @@
   padding-bottom: 100px;
 }
 
+.project_subtitle {
+	margin-top: 50px;
+}
+.project_subtitle img {
+	width: 60px;
+}
+
+.project_wrap .cont {
+	margin: 50px auto;
+}
+
 .sub_tit {
   margin-top: 20px;
   margin-bottom: 80px;
