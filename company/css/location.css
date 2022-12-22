@@ -1,9 +1,10 @@
-.location .sub_visual {
-  background-image: url(../../assets/images/introduction_main.png);
+/* 로케이션 */
+.location_wrap .sub_visual {
+  background-image: url(../../assets/images/3printer_visu-1.png);
   background-size: cover;
 }
 
-.location .sub_visual .main_text {
+.sub_visual .main_text {
   text-align: center;
   color: #fff;
 }
@@ -32,6 +33,7 @@
 
 .location .locate_cont .locate_map iframe {
   width: 100%;
+  max-height: inherit !important;
 }
 
 .locate_cont .locate_address {
@@ -41,11 +43,12 @@
 
 .locate_cont .locate_address .address_title {
   margin-bottom: 30px;
-  font-size: 36px;
+  font-size: 28px;
 }
 
 .locate_cont .locate_address p {
   margin-bottom: 10px;
+  font-size: 18px
 }
 
 @media screen and (max-width: 1024px) {
@@ -92,5 +95,11 @@
 
   .locate_cont .locate_address p {
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .locate_cont .locate_address .address_title {
+    font-size: 20px;
   }
 }

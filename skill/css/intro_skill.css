@@ -1,3 +1,19 @@
+/*기술 */
+.technology-wrap .inner_container .sub_title {
+  font-size: 32px;
+}
+
+.technology-wrap .inner_title .desc {
+  font-size: 16px !important;
+}
+
+@media(max-width: 1024px) {
+  .technology-wrap .inner_container .sub_title {
+    font-size: 28px;
+  }
+}
+
+/* 스킬 */
 /* skill */
 .skill_img {
   width: calc(50% - 30px);
@@ -14,7 +30,8 @@
   align-items: center;
   padding: 30px 0;
 }
-.skill_cont .skill_table > li {
+
+.skill_cont .skill_table>li {
   border-bottom: 1px solid #000;
 }
 
@@ -25,6 +42,7 @@
 .skill_cont .record_list {
   position: relative;
 }
+
 .skill_cont .list_depth2 {
   letter-spacing: -1px;
   max-height: 0;
@@ -32,20 +50,25 @@
   transition: all 0.5s;
   color: #666;
 }
-.skill_cont .list_title.on + .list_depth2 {
+
+.skill_cont .list_title.on+.list_depth2 {
   padding-top: 10px;
   padding-bottom: 30px;
   max-height: 300px;
 }
+
 .skill_cont .list_title i {
   transition: all 0.3s;
   font-size: 26px;
 }
+
 .skill_cont .list_title.on i {
   transform: rotate(90deg);
 }
+
 .skill_cont .list_depth2 li {
   margin: 10px 0;
+  font-size: 18px;
 }
 
 .skill_table .text_box {
@@ -72,11 +95,12 @@
 }
 
 .skill .sub_visual {
-  background-image: url(../../assets/images/skill_main.png);
+  background-image: url(/wp-content/uploads/2022/12/skill_main-1.png);
 }
 
 .inner_title .desc {
   margin-top: 10px;
+  font-size: 18px
 }
 
 .skill_cont {
@@ -126,7 +150,7 @@
   border-bottom: none;
 }
 
-.skill_table > .skill_cont {
+.skill_table>.skill_cont {
   padding: 30px 0;
   border-bottom: 1px solid #000;
   justify-content: space-between;
@@ -241,7 +265,7 @@
     padding: 15px 20px;
   }
 
-  .skill_table > .skill_cont .skill_cont {
+  .skill_table>.skill_cont .skill_cont {
     width: 50%;
   }
 }
@@ -260,7 +284,7 @@
     padding: 20px 0;
   }
 
-  .skill_cont .list_title.on + .list_depth2 {
+  .skill_cont .list_title.on+.list_depth2 {
     padding-bottom: 10px;
   }
 
@@ -317,19 +341,19 @@
   }
 
   .more_btn {
-    font-size: 16px;
+    font-size: 14px;
   }
 
-  .skill_table > .skill_cont {
+  .skill_table>.skill_cont {
     gap: 30px;
   }
 
-  .skill_table > .skill_cont .skill_cont {
+  .skill_table>.skill_cont .skill_cont {
     width: 100%;
     gap: 10px;
   }
 
-  .skill_table > .skill_cont .skill_cont p {
+  .skill_table>.skill_cont .skill_cont p {
     width: 100%;
   }
 

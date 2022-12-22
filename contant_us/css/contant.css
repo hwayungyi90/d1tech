@@ -1,3 +1,4 @@
+/* Contact Us */
 img {
   border: 0;
   vertical-align: top;
@@ -5,7 +6,7 @@ img {
 
 
 .contact_wrap .sub_visual {
-  background-image: url(/assets/images/contact_main.png);
+  background-image: url(../../assets/images/contact_main.png);
 }
 
 .contact_list_wrap {
@@ -33,7 +34,9 @@ img {
 }
 
 .gray_box .more_btn i {
-  background: url(../../assets/images/more_Arrow.png) no-repeat center;
+  background-image: url(../../assets/images/more_Arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .con_text_box {
@@ -57,7 +60,7 @@ img {
 .btn_box a {
   display: block;
   padding: 14px 30px;
-  padding-right: 45px;
+  /*   padding-right: 45px; */
 }
 
 .con_banner {
@@ -87,15 +90,11 @@ img {
 
 .contact_wrap .con_text_box .main_title {
   font-size: 28px;
+  line-height: 36px;
 }
 
 .contact_wrap .con_text_box .title_under {
   font-size: 18px;
-}
-
-.pro_text_box .btn_box a{
-	font-size:16px;
-	padding: 7px 16px;
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1500px) {
@@ -211,4 +210,28 @@ img {
   .btn_box a {
     padding: 6px 15px;
   }
+}
+
+@media screen and (max-width: 540px) {
+  .contact_wrap .con_text_box .main_title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .contact_wrap .con_text_box .title_under {
+    font-size: 16px;
+  }
+
+  .contact_wrap .con_text_box .more_btn {
+    font-size: 14px;
+  }
+
+  .contact_wrap .con_text_box .txt_box {
+    padding: 0
+  }
+}
+
+.pro_text_box .btn_box a {
+  font-size: 16px;
+  padding: 7px 16px;
 }

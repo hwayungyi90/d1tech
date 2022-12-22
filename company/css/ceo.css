@@ -1,9 +1,10 @@
+/* ceo */
 .ceo .sub_visual {
-  background-image: url(../../assets/images/introduction_main.png);
+  background-image: url(../../assets/images/3printer_visu-1.png);
   background-size: cover;
 }
 
-.ceo .sub_visual .main_text {
+.sub_visual .main_text {
   text-align: center;
   color: #fff;
 }
@@ -32,7 +33,7 @@
   justify-content: space-between;
 }
 
-.ceo_cont .ceo_intro > div {
+.ceo_cont .ceo_intro>div {
   width: calc(50% - 25px);
 }
 
@@ -43,7 +44,9 @@
 }
 
 .ceo_cont .ceo_intro img {
-  width: 100%;
+  width: 80%;
+  display: block;
+  margin-left: auto;
 }
 
 .ceo_career {
@@ -57,7 +60,7 @@
 
 .ceo_career .career_wrap .career_title {
   margin-bottom: 40px;
-  font-size: 36px;
+  font-size: 28px;
 }
 
 .ceo-career .career_wrap dl {
@@ -66,12 +69,13 @@
 
 .ceo_career .career_wrap dt {
   margin-bottom: 30px;
-  font-size: 30px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 600;
 }
 
 .ceo_career .career_wrap dd {
   margin-bottom: 20px;
+  font-size: 18px
 }
 
 .ceo_record {
@@ -81,15 +85,15 @@
 .ceo_record .record_title {
   margin-bottom: 60px;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
 }
 
 .ceo_record .list_title {
   display: flex;
-  padding: 30px;
+  padding: 20px 30px;
   align-items: center;
   justify-content: space-between;
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
   border-bottom: 1px solid #000;
 }
@@ -107,7 +111,7 @@
   transition: all 0.5s;
 }
 
-.ceo_record .list_title.on + .list_depth2 {
+.ceo_record .list_title.on+.list_depth2 {
   padding-top: 20px;
   padding-bottom: 20px;
   max-height: 300px;
@@ -124,6 +128,7 @@
 
 .ceo_record .list_depth2 li {
   margin: 10px 0;
+  font-size: 18px
 }
 
 .ceo_record .list_depth2 .font_gray {
@@ -133,15 +138,18 @@
 
 .ceo_banner {
   margin-bottom: 100px;
-  padding: 273px 190px;
-  background: url(../../assets/images/introduction_ceo_bottom_img.png) no-repeat center;
+  padding: 190px 32px;
+  background-image: url(../../assets/images/introduction_ceo_bottom_img.png);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   border-radius: 30px;
 }
 
 .ceo_banner .banner_text {
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
+  line-height: 1.5;
   letter-spacing: -2px;
   color: #fff;
   word-break: break-all;
@@ -190,7 +198,7 @@
     gap: 30px;
   }
 
-  .ceo_cont .ceo_intro > div {
+  .ceo_cont .ceo_intro>div {
     width: 50%;
   }
 
@@ -216,7 +224,7 @@
     font-size: 18px;
   }
 
-  .ceo_record .list_title.on + .list_depth2 {
+  .ceo_record .list_title.on+.list_depth2 {
     max-height: 320px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -256,7 +264,7 @@
     gap: 30px;
   }
 
-  .ceo_cont .ceo_intro > div {
+  .ceo_cont .ceo_intro>div {
     width: 100%;
   }
 

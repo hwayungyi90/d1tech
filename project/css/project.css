@@ -1,7 +1,8 @@
 /* main */
 
-.sub_visual {
-  background-image: url(/assets/images/pro_main.png);
+
+.project_wrap .sub_visual {
+  background-image: url(../../assets/images/pro_main-1.png);
 }
 
 .pro_under {
@@ -11,8 +12,13 @@
 .pro_list {
   display: flex;
   justify-content: space-between;
-  gap: 30px;
+  /*   gap: 30px; */
   margin-bottom: 80px;
+}
+
+.pro_list li {
+  width: 32%;
+  margin-right: 2%;
 }
 
 .pro_list figure {
@@ -75,7 +81,7 @@
   position: absolute;
   top: 10px;
   left: 13px;
-  background-image: url(/assets/images/house.png);
+  background-image: url(../../assets/images/house.png);
   background-size: cover;
   width: 56px;
   height: 56px;
@@ -90,7 +96,7 @@
   position: absolute;
   bottom: 2px;
   left: 120px;
-  background-image: url(/assets/images/more_Arrow.png);
+  background-image: url(../../assets/images/more_Arrow.png);
   background-size: contain;
   background-repeat: no-repeat;
   width: 20px;
@@ -115,7 +121,7 @@
   position: absolute;
   top: 12px;
   left: 11px;
-  background-image: url(/assets/images/sculpture.png);
+  background-image: url(../../assets/images/sculpture.png);
   background-size: cover;
   width: 56px;
   height: 56px;
@@ -133,7 +139,7 @@
   position: absolute;
   top: 11px;
   left: 13px;
-  background-image: url(/assets/images/precast.png);
+  background-image: url(../../assets/images/precast.png);
   background-size: cover;
   width: 56px;
   height: 56px;
@@ -141,7 +147,7 @@
 
 .bg_tit,
 .Precast_tit {
-  font-size: 42px;
+  font-size: 28px;
   margin-bottom: 30px;
   margin-top: 10px;
 }
@@ -153,6 +159,7 @@
   border-bottom: 2px solid #fff;
   display: inline-block;
   position: relative;
+  font-size: 16px
 }
 
 .more_pro_btn i {
@@ -162,7 +169,9 @@
   right: 5px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  background: url("../../assets/images/more_Arrow.png") no-repeat center;
+  background: url("../../assets/images/more_Arrow.png");
+  background-repeat: no-repeat;
+  background-position: center;
   width: 12px;
   height: 12px;
 }
@@ -204,7 +213,7 @@
 
   .bg_tit,
   .Precast_tit {
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 20px;
   }
 }
@@ -219,7 +228,7 @@
     width: 100%;
   }
 
-  .pro_list li{
+  .pro_list li {
     position: relative;
   }
 
@@ -297,14 +306,15 @@
 
   .bg_tit,
   .Precast_tit {
-    font-size: 36px;
+    font-size: 28px;
     margin-bottom: 0px;
   }
 
   .more_pro_btn {
-    font-size: 18px;
+    font-size: 14px;
   }
 }
+
 
 @media screen and (min-width: 768px) and (max-width: 950px) {
   .bg_tit {
@@ -334,6 +344,12 @@
     display: block;
   }
 
+  .pro_list li {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 3%;
+  }
+
   .pro_list figure {
     margin-top: 15px;
   }
@@ -343,7 +359,7 @@
   }
 
   .more_pro_btn {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .pro_list figure .gallery-img {
@@ -381,7 +397,7 @@
 
 .pro_intro_title {
   font-weight: normal;
-  font-size: 55px;
+  font-size: 35px;
 }
 
 .btn_top {
@@ -389,20 +405,19 @@
 }
 
 .project_subtitle {
-	margin-top: 50px;
+  margin-top: 50px;
 }
+
 .project_subtitle img {
-	width: 60px;
+  width: 60px;
 }
 
 .project_wrap .cont {
-	margin: 50px auto;
+  margin: 50px auto;
 }
 
 .sub_tit {
-  margin-top: 20px;
-  margin-bottom: 80px;
-  font-size: 36px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -413,7 +428,12 @@
 
 .img_list_second {
   display: flex;
-  gap: 30px;
+  justify-content: space-between;
+  /*   gap: 30px; */
+}
+
+.img_list_second li {
+  width: calc(50% - 15px);
 }
 
 .img_list_second img {
@@ -422,11 +442,11 @@
 }
 
 .img_txt {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 60px;
 }
 
 
@@ -466,7 +486,7 @@
 
   .sub_tit {
     margin-bottom: 40px;
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .img_list_second {
@@ -483,6 +503,14 @@
   }
 }
 
+@media screen and (max-width: 540px) {
+  .img_txt {
+    margin-bottom: 25px;
+    margin-top: 10px;
+  }
+
+}
+
 /* sculpture */
 
 .sculpture_img_wrap img {
@@ -490,7 +518,6 @@
   border-radius: 30px;
 }
 
-g
 /* precast */
 
 .precast_img_wrap img {
@@ -498,15 +525,16 @@ g
   border-radius: 30px;
 }
 
-.precast_img_list li {
+.precast_img_list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 30px;
+  /*   gap: 30px; */
 }
 
-.precast_img_list figure {
+.precast_img_list li {
   width: calc(50% - 15px);
+  margin-bottom: 30px;
 }
 
 .precast_img_list img {
@@ -530,13 +558,13 @@ g
 }
 
 @media screen and (max-width: 1024px) {
-  .precast_img_list li {
+  /*   .precast_img_list li {
     gap: 20px;
-  }
+  } */
 
-  .precast_img_list figure {
+  /*   .precast_img_list figure {
     width: calc(50% - 10px);
-  }
+  } */
 
   .precast_img_list_fore {
     margin-top: 60px;
@@ -544,8 +572,13 @@ g
 }
 
 @media screen and (max-width: 767px) {
-  .precast_img_list figure {
+  .img_list_second li {
     width: 100%;
+  }
+
+  .precast_img_list li {
+    width: 100%;
+    margin-right: 0;
   }
 
   .precast_img_list li {
@@ -561,7 +594,7 @@ g
   }
 
   .house_img_wrap picture img {
-    min-height: 240px;
+    /*     min-height: 240px; */
     border-radius: 10px;
   }
 
@@ -596,8 +629,8 @@ g
 
   .bg_tit,
   .Precast_tit {
-    font-size: 28px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .more_pro_btn {

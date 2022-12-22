@@ -1,11 +1,8 @@
 /* materials */
-.sub_visual {
-  background: url(../../assets/images/business_visual.png);
+.business_wrap .sub_visual {
+  background-image: url(../../assets/images/business_visual-1.png);
 }
 
-.sub_visual {
-  background: url(../../assets/images/business_visual.png);
-}
 
 .business {
   word-break: keep-all;
@@ -25,10 +22,11 @@
 
 .inner_title .desc {
   margin-top: 10px;
+  font-size: 20px;
 }
 
 .section_subtitle {
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 700;
 }
 
@@ -55,6 +53,7 @@
   padding: 70px;
   color: #fff;
   text-align: center;
+  width: 33.33%
 }
 
 .materials_text:nth-child(2) {
@@ -63,18 +62,18 @@
 }
 
 .materials_text .desc_title {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
 }
 
 .materials_text .desc_title span {
   font-size: 20px;
-  margin: 40px 0 20px;
+  margin: 10px 0 10px;
 }
 
 .materials_text .desc {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .business_materials {
@@ -90,7 +89,7 @@
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  max-width: 1395px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -98,32 +97,35 @@
   text-align: center;
   padding-top: 100px;
   padding-bottom: 40px;
+  font-size: 32px;
+  line-height: 40px;
 }
 
 .materials_list .business_cont {
   background-color: #fff;
-  width: 400px;
-  height: 400px;
+  width: 360px;
+  height: 360px;
   border-radius: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 35px;
+  padding: 30px;
 }
 
 .materials_list .materials_title {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
 }
 
 .text_box .desc {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
 }
 
 .materials_text .desc_title span {
   display: block;
+
 }
 
 /* tablet */
@@ -155,6 +157,18 @@
   .materials_list .business_cont {
     width: 320px;
     height: 320px;
+  }
+
+  .materials_wrap .section_desc_title {
+    font-size: 18px;
+  }
+
+  .business_materials .section_title {
+    font-size: 28px;
+  }
+
+  .materials_wrap .inner_title .desc {
+    font-size: 18px;
   }
 
 }
@@ -214,7 +228,7 @@
   }
 
   .section_subtitle {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .business_materials .section_title {
@@ -224,6 +238,18 @@
   .business_materials {
     margin-top: 60px;
     padding-bottom: 60px;
+  }
+
+  .materials_wrap .section_desc_title {
+    font-size: 16px;
+  }
+
+  .materials_wrap .inner_title .desc {
+    font-size: 16px;
+  }
+
+  .business_materials .section_title {
+    font-size: 22px;
   }
 }
 
@@ -239,5 +265,17 @@
 
   .text_box .desc {
     font-size: 14px;
+  }
+
+  .materials_wrap .section_desc_title {
+    font-size: 18px;
+  }
+
+  .materials_list .materials_title {
+    font-size: 20px;
+  }
+
+  .materials_list {
+    gap: 30px;
   }
 }

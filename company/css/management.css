@@ -1,9 +1,10 @@
-.management .sub_visual {
-  background-image: url(../../assets/images/introduction_main.png);
+/* 매니지먼트 */
+.manage_wrap .sub_visual {
+  background-image: url(../../assets/images/3printer_visu-1.png);
   background-size: cover;
 }
 
-.management .sub_visual .main_text {
+.sub_visual .main_text {
   text-align: center;
   color: #fff;
 }
@@ -27,13 +28,19 @@
 
 .manage_list {
   display: flex;
-  gap: 90px;
+  /*   gap: 90px; */
   justify-content: center;
   align-items: flex-start;
 }
 
 .manage_list li {
   max-width: 405px;
+  width: 100%;
+  margin-right: 90px;
+}
+
+.manage_list li:last-child {
+  margin-right: 0;
 }
 
 .manage_list li img {
@@ -44,6 +51,7 @@
   margin-top: 50px;
   text-align: center;
   word-break: keep-all;
+  font-size: 18px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -57,7 +65,6 @@
   }
 
   .manage_list {
-    gap: 40px;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -66,6 +73,16 @@
     max-width: 320px;
     padding: 24px;
     box-sizing: border-box;
+    margin-right: 40px;
+    margin-bottom: 40px;
+  }
+
+  .manage_list li:nth-child(2) {
+    margin-right: 0
+  }
+
+  .manage_list li:last-child {
+    margin-bottom: 0;
   }
 
   .manage_list .desc {
@@ -83,12 +100,13 @@
     margin-top: 60px;
   }
 
-  .manage_list {
-    gap: 20px;
+  .manage_list li {
+    margin-right: 0;
   }
 
   .manage_list .desc {
     margin: 15px auto 0;
+    font-size: 16px
   }
 
   .manage_list .desc br {
@@ -101,13 +119,7 @@
     max-width: 360px;
     width: 100%;
     margin: 0 auto;
-  }
-}
-
-@media (max-width: 540px) {
-  .manage_list li {
-    max-width: 360px;
-    width: 80%;
-    margin: 0 auto;
+    margin-right: auto !important;
+    margin-bottom: 20px;
   }
 }
