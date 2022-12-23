@@ -1,0 +1,91 @@
+.software {
+    margin-bottom: 100px;
+}
+
+.software .inner_title {
+    margin-bottom: 100px;
+}
+
+.software .inner_title .section_title {
+    line-height: 75px;
+}
+
+.software .software_cont img {
+    width: 100%;
+}
+
+.software .software_cont .software_main_img {
+    margin-bottom: 100px;
+}
+
+.software .software_cont .software_main_img .img_box {
+    margin-bottom: 30px;
+}
+
+.software .software_cont .image_desc {
+    text-align: center;
+}
+
+.software .software_cont .software_desc_img .imgone_box {
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1024px) {
+    .software {
+        margin-bottom: 80px;
+    }
+    
+    .software .inner_title {
+        margin-bottom: 80px;
+    }
+    
+    .software .inner_title .section_title {
+        line-height: 56px;
+    }
+    
+    .software .software_cont .software_main_img {
+        margin-bottom: 80px;
+    }
+    
+    .software .software_cont .software_main_img .img_box {
+        margin-bottom: 20px;
+    }
+    
+    .software .software_cont .image_desc {
+        font-size: 18px;
+    }
+    
+    .software .software_cont .software_desc_img .imgone_box {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .software {
+        margin-bottom: 60px;
+    }
+    
+    .software .inner_title {
+        margin-bottom: 60px;
+    }
+    
+    .software .inner_title .section_title {
+        line-height: 46px;
+    }
+    
+    .software .software_cont .software_main_img {
+        margin-bottom: 60px;
+    }
+    
+    .software .software_cont .software_main_img .img_box {
+        margin-bottom: 15px;
+    }
+    
+    .software .software_cont .image_desc {
+        font-size: 16px;
+    }
+    
+    .software .software_cont .software_desc_img .imgone_box {
+        margin-bottom: 20px;
+    }
+}
