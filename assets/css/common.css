@@ -53,8 +53,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1114px;
-  margin: 0 auto;
+  max-width: 1457px;
+  margin-left: auto;
 }
 
 .header .header_wrap .header_flex .logo_box {
@@ -69,13 +69,9 @@ a {
   color: #666;
   font-size: 15px;
   line-height: 20px;
-  position: absolute;
   right: 32px;
   top: 10.5px;
   display: flex;
-}
-.header .header_wrap .inner_container {
-  position: relative;
 }
 .header .header_wrap .kor-Eng-conversion a {
   display: block;
@@ -90,6 +86,20 @@ a {
   width: 1px;
   height: 10px;
   margin: 0 5px;
+}
+@media screen and (max-width: 1024px){
+  .header .header_wrap .kor-Eng-conversion {
+    margin-right: 60px;
+    margin-top: 4px;
+  }
+}
+@media screen and (max-width: 767px){
+  .header .header_wrap .kor-Eng-conversion a:hover {
+    color: initial;
+  }
+  .header .header_wrap .kor-Eng-conversion {
+    font-size: 20px;
+  }
 }
 #menu_gnb ul {
   display: flex;
