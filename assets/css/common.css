@@ -76,6 +76,9 @@ a {
 .header .header_wrap .kor-Eng-conversion a {
   display: block;
 }
+.header .header_wrap .kor-Eng-conversion a:first-child {
+  color: #000;
+}
 .header .header_wrap .kor-Eng-conversion a:hover {
   color: #000;
 }
@@ -98,7 +101,7 @@ a {
     color: initial;
   }
   .header .header_wrap .kor-Eng-conversion {
-    font-size: 20px;
+    font-size: 16px;
   }
 }
 #menu_gnb ul {
