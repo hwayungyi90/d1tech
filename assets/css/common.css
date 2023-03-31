@@ -65,7 +65,32 @@ a {
 .header .header_wrap .header_flex .logo_box picture {
   display: flex;
 }
-
+.header .header_wrap .kor-Eng-conversion {
+  color: #666;
+  font-size: 15px;
+  line-height: 20px;
+  position: absolute;
+  right: 32px;
+  top: 10.5px;
+  display: flex;
+}
+.header .header_wrap .inner_container {
+  position: relative;
+}
+.header .header_wrap .kor-Eng-conversion a {
+  display: block;
+}
+.header .header_wrap .kor-Eng-conversion a:hover {
+  color: #000;
+}
+.header .header_wrap .kor-Eng-conversion a:first-child::after{
+  content: "";
+  display: inline-block;
+  background-color: #000;
+  width: 1px;
+  height: 10px;
+  margin: 0 5px;
+}
 #menu_gnb ul {
   display: flex;
 }
