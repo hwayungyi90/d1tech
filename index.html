@@ -94,15 +94,13 @@
           <div class="menu_background"></div>
         </div>
       </div>
-    </header>
 
-    <nav class="mobile_nav">
+      <!-- 모바일  -->
       <div class="mobile_btn">
         <div class="line line01"></div>
         <div class="line line02"></div>
         <div class="line line03"></div>
       </div>
-
       <div class="nav_list">
         <div class="mobile_list_box">
           <ul>
@@ -152,7 +150,13 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </header>
+
+    <!-- <nav class="mobile_nav">
+      
+
+      
+    </nav> -->
 
     <section class="main_section">
       <div class="main_visual_img">
@@ -509,14 +513,14 @@
   <script src="./assets/js/main.js"></script>
   <script>
     var menuBtn = document.querySelector(".mobile_btn");
-    var nav = document.querySelector("nav");
-    var lineOne = document.querySelector("nav .mobile_btn .line01");
-    var lineTwo = document.querySelector("nav .mobile_btn .line02");
-    var lineThree = document.querySelector("nav .mobile_btn .line03");
-    var link = document.querySelector("nav .nav_list");
+    // var nav = document.querySelector("nav");
+    var lineOne = document.querySelector(".header .mobile_btn .line01");
+    var lineTwo = document.querySelector(".header .mobile_btn .line02");
+    var lineThree = document.querySelector(".header .mobile_btn .line03");
+    var link = document.querySelector(".header .nav_list");
 
     menuBtn.addEventListener("click", () => {
-      nav.classList.toggle("active");
+      // nav.classList.toggle("active");
       lineOne.classList.toggle("line-cross");
       lineTwo.classList.toggle("line-fade-out");
       lineThree.classList.toggle("line-cross");

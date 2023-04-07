@@ -203,7 +203,7 @@ a {
   background-color: rgba(255, 255, 255, 0.85);
 }
 
-.mobile_nav {
+.header .mobile_btn, .header .nav_list{
   display: none;
 }
 
@@ -270,6 +270,10 @@ a {
     height: 60px;
   }
 
+  .header .mobile_btn, .header .nav_list{
+    display: block;
+  }
+
   #menu_gnb {
     display: none;
   }
@@ -300,7 +304,7 @@ a {
   }
 
   .mobile_nav {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     right: 0;
     display: block;
@@ -308,24 +312,27 @@ a {
     width: 400px;
     transition: all 800ms cubic-bezier(0.3, 0, 0.3, 1);
     border-radius: 0% 0% 0% 0%;
-    overflow: hidden;
+    overflow: hidden; */
+    
   }
 
-  .mobile_nav.active {
+  /* .mobile_nav.active {
     transform: translateX(0px);
     background: rgba(255, 255, 255, 0.6);
-  }
+  } */
 
-  .mobile_nav .mobile_btn {
+  .header .mobile_btn {
+    display: block;
     position: absolute;
     right: 20px;
     top: 20px;
     width: 30px;
     cursor: pointer;
     z-index: 2;
+    transition: all 800ms cubic-bezier(0.3, 0, 0.3, 1);
   }
 
-  .mobile_nav .mobile_btn .line {
+  .header .mobile_btn .line {
     padding: 0;
     width: 30px;
     background: #000;
@@ -334,39 +341,39 @@ a {
     transition: all 700ms cubic-bezier(0.5, 0, 0.5, 1);
   }
 
-  .mobile_nav .mobile_btn .line.line01 {
+  .header .mobile_btn .line.line01 {
     width: 30px;
     transform: rotate(0) translateY(0);
   }
 
-  .mobile_nav .mobile_btn .line.line01.line-cross {
+  .header .mobile_btn .line.line01.line-cross {
     width: 30px;
     transform: rotate(45deg) translateY(10px);
   }
 
-  .mobile_nav .mobile_btn .line.line02 {
+  .header .mobile_btn .line.line02 {
     width: 30px;
     transform: translateX(0);
   }
 
-  .mobile_nav .mobile_btn .line.line02.line-fade-out {
+  .header .mobile_btn .line.line02.line-fade-out {
     width: 30px;
     transform: translate(30px);
     opacity: 0;
   }
 
-  .mobile_nav .mobile_btn .line.line03 {
+  .header .mobile_btn .line.line03 {
     width: 30px;
     transform: rotate(0) translateY(0);
   }
 
-  .mobile_nav .mobile_btn .line.line03.line-cross {
+  .header .mobile_btn .line.line03.line-cross {
     width: 30px;
     transform: rotate(-45deg) translateY(-10px);
   }
 
-  .mobile_nav .nav_list {
-    height: 100%;
+  .header .nav_list {
+    height: calc(100vh - 60px);
     opacity: 0;
     transition: all 700ms cubic-bezier(0.5, 0, 0.5, 1);
     position: absolute;
@@ -374,32 +381,33 @@ a {
     z-index: 1;
     background: #fff;
     left: 100%;
+    top: 60px;
   }
 
-  .mobile_nav .nav_list .mobile_list_box {
-    margin-top: 60px;
+  .header .nav_list .mobile_list_box {
+    /* margin-top: 60px; */
     padding: 25px 0 0 0;
     border-top: 1px solid #ddd;
     width: 100%;
   }
 
-  .mobile_nav .nav_list .mobile_list_box .mo_detph1 {
+  .header .nav_list .mobile_list_box .mo_detph1 {
     margin-bottom: 10px;
   }
 
-  .mobile_nav .nav_list.fade-in {
+  .header .nav_list.fade-in {
     opacity: 1;
     transform: translateX(0px);
     left: 0;
   }
 
-  .mobile_nav .nav_list .link .mobile_btn_box {
+  .header .nav_list .link .mobile_btn_box {
     position: absolute;
     right: 20px;
     top: 0;
   }
 
-  .mobile_nav .nav_list .link {
+  .header .nav_list .link {
     padding-left: 20px;
     font-weight: 500;
     font-size: 20px;
@@ -409,7 +417,7 @@ a {
     display: block;
   }
 
-  .mobile_nav .nav_list .link:after {
+  .header .nav_list .link:after {
     position: absolute;
     top: 50%;
     background: url(../images/plus_btn.png);
@@ -422,11 +430,11 @@ a {
     transform: translateY(-50%);
   }
 
-  .mobile_nav ul li:nth-child(4) .link:after {
+  .header .nav_list ul li:nth-child(4) .link:after {
     display: none;
   }
 
-  .mobile_nav .nav_list .link.active:after {
+  .header .nav_list .link.active:after {
     background: url(../images/minus_btn.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -434,7 +442,7 @@ a {
     width: 15px;
   }
 
-  .mobile_nav .nav_list .link+.mo_detph2 {
+  .header .nav_list .link+.mo_detph2 {
     position: relative;
     padding-left: 30px;
     background: #f7f7f7;
@@ -445,20 +453,20 @@ a {
     transition: all 0.5s;
   }
 
-  .mobile_nav .nav_list .link.active+.mo_detph2 {
+  .header .nav_list .link.active+.mo_detph2 {
     max-height: 270px;
     padding-top: 20px;
     padding-bottom: 20px;
   }
 
-  .mobile_nav .nav_list .link+.mo_detph2 li {
+  .header .nav_list .link+.mo_detph2 li {
     color: #555;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 15px;
   }
 
-  .mobile_nav .nav_list .link+.mo_detph2 li:last-child {
+  .header .nav_list .link+.mo_detph2 li:last-child {
     margin-bottom: 0;
   }
 
